@@ -1,0 +1,1 @@
+web: gunicorn solsticesociety.wsgi --log-file
