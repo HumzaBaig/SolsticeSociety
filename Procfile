@@ -1,1 +1,1 @@
-web: gunicorn solsticesociety.wsgi --log-file
+web: gunicorn solsticesociety.wsgi
