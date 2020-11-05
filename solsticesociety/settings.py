@@ -26,9 +26,12 @@ with open(os.path.join(BASE_DIR, '.env')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['solsticesociety.herokuapp.com']
+ALLOWED_HOSTS = [
+    'solsticesociety.herokuapp.com',
+    '127.0.0.1'
+]
 
 
 # Application definition
