@@ -30,7 +30,7 @@ class ReservationViewSet(viewsets.ModelViewSet):
             fail_silently=False
         )
 
-        Response(
+        return Response(
             serializer.data,
             status=status.HTTP_201_CREATED,
             headers=headers
