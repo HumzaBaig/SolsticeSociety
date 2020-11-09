@@ -25,8 +25,8 @@ class ReservationViewSet(viewsets.ModelViewSet):
         send_mail(
             'New Reservation for Solstice Society',
             f"{serializer.validated_data['name']} has made a reservation at {serializer.validated_data['datetime']}",
-            'shaheermirzacs@gmail.com',
-            ['ectomoplys@gmail.com'],
+            'revitiidevelopment@gmail.com',
+            [serializer.validated_data['email']],
             fail_silently=False
         )
 

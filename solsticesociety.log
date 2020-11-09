@@ -858,3 +858,38 @@ ValueError: Missing staticfiles manifest entry for 'rest_framework/css/bootstrap
 2020-11-09 10:27:58,172 [Thread-6    ] [INFO ] [django.server       ]  code 400, message Bad request version ('\x8e¦Cî\x9f\x00\x00\x14À')
 2020-11-09 10:27:58,172 [Thread-6    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
 
+2020-11-09 10:50:13,656 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:50:19,043 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3053
+2020-11-09 10:50:19,099 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/main.7cba9ca8.chunk.js HTTP/1.1" 200 1827
+2020-11-09 10:50:19,099 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css HTTP/1.1" 200 943
+2020-11-09 10:50:19,101 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/2.7ae2349e.chunk.js HTTP/1.1" 200 139984
+2020-11-09 10:50:19,192 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css.map HTTP/1.1" 200 1490
+2020-11-09 10:50:19,192 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/main.7cba9ca8.chunk.js.map HTTP/1.1" 200 3462
+2020-11-09 10:50:19,195 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/2.7ae2349e.chunk.js.map HTTP/1.1" 200 364572
+2020-11-09 10:50:52,046 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:50:53,132 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3053
+2020-11-09 10:50:53,184 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/main.d6b726ab.chunk.js HTTP/1.1" 200 1827
+2020-11-09 10:50:53,200 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/main.d6b726ab.chunk.js.map HTTP/1.1" 200 3491
+2020-11-09 10:51:15,485 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:51:17,212 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3053
+2020-11-09 10:51:17,260 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/main.1e62881c.chunk.js HTTP/1.1" 200 1827
+2020-11-09 10:51:17,287 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/main.1e62881c.chunk.js.map HTTP/1.1" 200 3471
+2020-11-09 10:52:15,965 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:53:34,335 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 10:53:34,348 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 10:53:41,356 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 10:53:45,597 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 11:25:07,147 [Thread-3    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 11:25:07,153 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 11:25:26,506 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 11:25:37,655 [Thread-4    ] [INFO ] [django.server       ]  "DELETE /api/reservations/3/ HTTP/1.1" 204 0
+2020-11-09 11:25:44,344 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 694
+2020-11-09 11:39:20,326 [Thread-5    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 694
+2020-11-09 11:39:20,340 [Thread-6    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 11:39:20,346 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 694
+2020-11-09 12:37:11,482 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 12:37:11,484 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 12:37:12,071 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 12:37:39,938 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 12:37:39,939 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 12:37:40,372 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
