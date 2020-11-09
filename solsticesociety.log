@@ -182,3 +182,18 @@ smtplib.SMTPSenderRefused: (550, b'Unauthenticated senders not allowed', 'shahee
 2020-11-09 06:50:05,038 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
 2020-11-09 06:52:40,480 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-11-09 06:52:40,549 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 07:21:18,870 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 07:21:32,977 [Thread-1    ] [WARNI] [django.request      ]  Unauthorized: /api/reservations/
+2020-11-09 07:21:32,977 [Thread-1    ] [WARNI] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 401 27
+2020-11-09 07:21:44,772 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 07:41:09,328 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/models.py changed, reloading.
+2020-11-09 07:41:09,328 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 07:41:09,744 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 07:41:37,053 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 07:41:55,475 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 07:41:55,547 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 07:41:58,750 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 07:42:06,742 [Thread-1    ] [WARNI] [django.request      ]  Unauthorized: /api/reservations/
+2020-11-09 07:42:06,742 [Thread-1    ] [WARNI] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 401 27
+2020-11-09 07:42:41,128 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 07:42:43,502 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
