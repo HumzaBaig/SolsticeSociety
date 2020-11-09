@@ -15,11 +15,11 @@ class App extends Component {
     console.log(process.env.NODE_ENV);
     if (process.env.NODE_ENV === 'development') {
       token = '7622fb39205e7d329e8776c3fe02c7cd5a329454';
-      url = 'http://127.0.0.1:8000/api/reservations/';
+      url = 'http://solsticesociety.herokuapp.com/api/reservations/';
       console.log('here');
     } else {
       token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
-      url = 'https://127.0.0.1:8000/api/reservations/';
+      url = 'https://solsticesociety.herokuapp.com/api/reservations/';
       console.log('howdy');
     }
 
