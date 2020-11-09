@@ -12,6 +12,7 @@ django-filter = "==2.4.0"
 gunicorn = "==20.0.4"
 whitenoise = "*"
 django-cors-headers = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.9"
