@@ -21,7 +21,8 @@ class App extends Component {
       url = 'https://127.0.0.1:8000/api/reservations/';
     }
 
-    console.log(process.env.DJANGO_API_TOKEN);
+    console.log(token);
+    console.log(url);
     try {
       // const res = await fetch('http://solsticesociety.herokuapp.com/api/registrations/');
       const res = await fetch(url,
