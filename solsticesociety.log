@@ -744,3 +744,48 @@ ValueError: Missing staticfiles manifest entry for 'rest_framework/css/bootstrap
 2020-11-09 09:46:46,955 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/main.64ae11b3.chunk.js.map HTTP/1.1" 200 3396
 2020-11-09 09:46:46,962 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
 2020-11-09 09:46:46,965 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/2.7ae2349e.chunk.js.map HTTP/1.1" 200 364572
+2020-11-09 09:53:53,475 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 09:53:55,874 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3053
+2020-11-09 09:53:55,935 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css HTTP/1.1" 200 943
+2020-11-09 09:53:55,938 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/main.da852800.chunk.js HTTP/1.1" 200 2033
+2020-11-09 09:53:55,939 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/2.7ae2349e.chunk.js HTTP/1.1" 200 139984
+2020-11-09 09:53:55,945 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css.map HTTP/1.1" 200 1490
+2020-11-09 09:53:55,953 [Thread-4    ] [INFO ] [django.server       ]  code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ØÎ\x9eìA«ýê\x99´÷\x00`«^õe<ªíäÌHåL]©Ê\x9fÏoy')
+2020-11-09 09:53:55,953 [Thread-4    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 09:53:55,957 [Thread-5    ] [INFO ] [django.server       ]  code 400, message Bad request version ('ü±Fú©¥Ó5OK$ÙY%Á\x00×hâ+,òÝ\x1aÜòÅUjÜ\x82é\x006\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 09:53:55,957 [Thread-5    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 09:53:55,959 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/main.da852800.chunk.js.map HTTP/1.1" 200 3397
+2020-11-09 09:53:55,959 [Thread-6    ] [INFO ] [django.server       ]  code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01F4\x13\x9eY©÷Nù\x08mï\x15\x9ex×ß\x82ÞÓ\x95µç\xad\x87\x81F@o"u¶\x00\x00\x14À')
+2020-11-09 09:53:55,959 [Thread-6    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 09:53:55,961 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/2.7ae2349e.chunk.js.map HTTP/1.1" 200 364572
+2020-11-09 09:55:29,069 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/settings.py changed, reloading.
+2020-11-09 09:55:29,508 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 09:55:31,411 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3053
+2020-11-09 09:55:31,469 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css HTTP/1.1" 304 0
+2020-11-09 09:55:31,472 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/2.7ae2349e.chunk.js HTTP/1.1" 304 0
+2020-11-09 09:55:31,472 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/main.da852800.chunk.js HTTP/1.1" 304 0
+2020-11-09 09:55:31,485 [Thread-4    ] [INFO ] [django.server       ]  code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x032\x03íÙöcí|c\x12M@¬\x8a\x8eFõ©ðÆî')
+2020-11-09 09:55:31,485 [Thread-4    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 09:55:31,488 [Thread-5    ] [INFO ] [django.server       ]  code 400, message Bad request version ('}\x04\x8cW\x18ªz$)8øNS¬ëÇ\x006\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 09:55:31,488 [Thread-5    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 09:55:31,490 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css.map HTTP/1.1" 304 0
+2020-11-09 09:55:31,490 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/main.da852800.chunk.js.map HTTP/1.1" 304 0
+2020-11-09 09:55:31,490 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/2.7ae2349e.chunk.js.map HTTP/1.1" 304 0
+2020-11-09 09:55:31,491 [Thread-6    ] [INFO ] [django.server       ]  code 400, message Bad request version ('ôZOj¥ï\xadø¡&ª\x00\x00\x14À')
+2020-11-09 09:55:31,491 [Thread-6    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 09:58:46,577 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 09:58:48,551 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3053
+2020-11-09 09:58:48,611 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css HTTP/1.1" 200 943
+2020-11-09 09:58:48,614 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/main.0e84a7b4.chunk.js HTTP/1.1" 200 2237
+2020-11-09 09:58:48,615 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/2.0afd0d0d.chunk.js HTTP/1.1" 200 141662
+2020-11-09 09:58:48,622 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css.map HTTP/1.1" 200 1490
+2020-11-09 09:58:48,642 [Thread-4    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 09:58:48,646 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/main.0e84a7b4.chunk.js.map HTTP/1.1" 200 3841
+2020-11-09 09:58:48,654 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 09:58:48,657 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/2.0afd0d0d.chunk.js.map HTTP/1.1" 200 372813

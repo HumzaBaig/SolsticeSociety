@@ -8,17 +8,28 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    var devToken = '7622fb39205e7d329e8776c3fe02c7cd5a329454';
-    var prodToken = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
+    // var devToken = '7622fb39205e7d329e8776c3fe02c7cd5a329454';
+    // var prodToken = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
+    var token = '';
+    var url = '';
+
+    if (process.env_NODE_ENV !== "production") {
+      token = '7622fb39205e7d329e8776c3fe02c7cd5a329454';
+      url = 'http://127.0.0.1:8000/api/reservations/';
+    } else {
+      token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
+      url = 'https://127.0.0.1:8000/api/reservations/';
+    }
+
     console.log(process.env.DJANGO_API_TOKEN);
     try {
       // const res = await fetch('http://solsticesociety.herokuapp.com/api/registrations/');
-      const res = await fetch('http://127.0.0.1:8000/api/reservations/',
+      const res = await fetch(url,
       {
         method: 'GET',
         withCredentials: true,
         headers: new Headers({
-          'Authorization': 'Token ' + prodToken,
+          'Authorization': 'Token ' + token,
           'Content-Type': 'application/json'
         })
       });
