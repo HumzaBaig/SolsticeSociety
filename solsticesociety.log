@@ -899,3 +899,446 @@ ValueError: Missing staticfiles manifest entry for 'rest_framework/css/bootstrap
 2020-11-09 13:01:04,752 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
 2020-11-09 13:01:04,752 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-11-09 13:01:05,203 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:02:37,585 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:02:37,586 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:02:38,020 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:07:48,522 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:07:48,523 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:07:49,052 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:08:09,507 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:08:09,575 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:08:13,799 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:08:34,728 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 25, in create
+    print(f"""{data['name']},
+UnboundLocalError: local variable 'data' referenced before assignment
+2020-11-09 13:08:34,729 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18051
+2020-11-09 13:08:50,928 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:08:50,928 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:08:51,404 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:08:53,530 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 238
+2020-11-09 13:09:06,036 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:09:06,037 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:09:06,516 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:09:08,224 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 238
+2020-11-09 13:09:22,189 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:09:22,190 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:09:22,666 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:09:24,416 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 238
+2020-11-09 13:10:06,015 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:10:06,015 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:10:06,464 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:10:07,867 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 238
+2020-11-09 13:10:21,122 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:10:21,122 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:10:21,589 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:10:22,560 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:10:48,430 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:10:48,431 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:10:48,876 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:10:49,672 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:14:11,897 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:14:11,897 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:14:12,335 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:16:24,568 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:16:24,568 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:16:25,047 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:16:27,522 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 27, in create
+    date = datetime.strptime(data['datetime'], '%m-%d-%Y %H:%M')
+TypeError: strptime() argument 1 must be str, not datetime.datetime
+2020-11-09 13:16:27,524 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18082
+2020-11-09 13:16:54,039 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:16:54,039 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:16:54,487 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:16:55,360 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:17:21,356 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:17:21,356 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:17:21,776 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:21:42,048 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:21:42,049 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:21:42,587 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:21:45,478 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 27, in create
+    date = datetime.strftime('%m/%d%Y at %H:%M %p', data['datetime'])
+TypeError: descriptor 'strftime' for 'datetime.date' objects doesn't apply to a 'str' object
+2020-11-09 13:21:45,480 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18137
+2020-11-09 13:23:23,285 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:23:23,286 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:23:23,731 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:23:25,159 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 34, in create
+    Time: {date.month}/{date.day}/{date.year} at {date.hour}:{date.minute}
+AttributeError: 'str' object has no attribute 'month'
+2020-11-09 13:23:25,161 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18064
+2020-11-09 13:23:36,335 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:23:36,335 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:23:36,779 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:23:49,230 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:23:49,230 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:23:49,672 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:23:50,799 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:23:58,079 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:23:58,080 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:23:58,556 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:24:00,048 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:28:54,860 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:28:54,861 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:28:55,336 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:28:56,418 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 35, in create
+    Duration: {strfdelta(date['duration'], '{hours} hours {minutes}')}
+TypeError: string indices must be integers
+2020-11-09 13:28:56,420 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18038
+2020-11-09 13:30:07,239 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:30:07,239 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:30:07,672 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:30:08,620 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 35, in create
+    Duration: {strfdelta(date['duration'], "{hours} hours {minutes}")}
+TypeError: string indices must be integers
+2020-11-09 13:30:08,621 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18038
+2020-11-09 13:30:29,402 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:30:29,402 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:30:29,846 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:30:30,591 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 35, in create
+    Duration: {strfdelta(date['duration'], '{1} hours {2} minutes')}
+TypeError: string indices must be integers
+2020-11-09 13:30:30,593 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18036
+2020-11-09 13:31:19,218 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:31:19,218 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:31:19,676 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:31:20,548 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 29, in create
+    duration = strfdelta(date['duration'], '{hours} hours {minutes} minutes')
+TypeError: string indices must be integers
+2020-11-09 13:31:20,549 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18045
+2020-11-09 13:31:25,012 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:31:25,013 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:31:25,466 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:31:31,465 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 29, in create
+    duration = strfdelta(date['duration'], '{1} hours {2} minutes')
+TypeError: string indices must be integers
+2020-11-09 13:31:31,466 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18035
+2020-11-09 13:32:39,568 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:32:39,568 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:32:40,024 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:32:41,251 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 29, in create
+    duration = strfdelta(data['duration'], '{1} hours {2} minutes')
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 73, in strfdelta
+    return fmt.format(**d)
+IndexError: Replacement index 1 out of range for positional args tuple
+2020-11-09 13:32:41,252 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18227
+2020-11-09 13:32:53,674 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:32:53,674 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:32:54,123 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:32:54,996 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:34:24,537 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:34:24,537 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:34:25,017 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:34:26,308 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:34:37,630 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:34:37,631 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:34:38,102 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:35:16,167 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:35:16,168 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:35:16,684 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:35:17,564 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:36:08,770 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:37:31,019 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:37:31,019 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:37:31,466 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:37:33,115 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 37, in create
+    Duration: {duration} ({add_time(date, duration).strftime('%m/%d/%Y at %I:%M %p')})
+AttributeError: 'str' object has no attribute 'strftime'
+2020-11-09 13:37:33,116 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18082
+2020-11-09 13:37:52,256 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:37:52,257 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:37:52,712 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:37:55,245 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 37, in create
+    Duration: {duration} ({add_time(data['duration'], data['duration']).strftime('%m/%d/%Y at %I:%M %p')})
+AttributeError: 'datetime.timedelta' object has no attribute 'strftime'
+2020-11-09 13:37:55,246 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18132
+2020-11-09 13:41:05,588 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:41:05,588 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:41:06,033 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:41:06,883 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 37, in create
+    Duration: {duration} ({add_time(data['duration'], data['duration']).strftime('%m/%d/%Y at %I:%M %p')})
+AttributeError: 'datetime.timedelta' object has no attribute 'strftime'
+2020-11-09 13:41:06,884 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18132
+2020-11-09 13:41:27,756 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:41:27,756 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:41:28,222 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:41:28,772 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:42:08,351 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:42:08,351 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:42:08,783 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:42:11,325 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:42:41,876 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:42:41,876 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:42:42,332 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:50:03,724 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:50:03,724 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:50:04,257 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:50:15,427 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /api/reservations/
+Traceback (most recent call last):
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shaheermirza/.local/share/virtualenvs/solsticesociety-SaBv4jx5/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py", line 76, in create
+    send_mail(
+TypeError: send_mail() missing 1 required positional argument: 'recipient_list'
+2020-11-09 13:50:15,429 [Thread-1    ] [ERROR] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 500 18056
+2020-11-09 13:50:50,712 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:50:50,712 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:50:51,177 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:50:57,322 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 240
+2020-11-09 13:51:51,930 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:51:51,930 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:51:52,351 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:52:05,883 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:52:05,884 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:52:06,327 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:54:29,839 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:54:29,840 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:54:30,253 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader

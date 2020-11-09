@@ -76,7 +76,7 @@ Honestly that's all that's needed for the development side.
 
 ### Email
 
-SendGrid's API won't work for me in a development environment for whatever reason. It was working just fine last week and when I messed with it Saturday, but not as of writing this. So go to `/backend/api/views.py` and comment out the `def create()` function on lines 19-37 when testing. Go ahead and edit the message if you want. Here's the format:
+Go ahead and edit the email bodies if you want. It's in `backend/api/views.py` under `def create():` Here's the format:
 ```python
 send_mail(
     subject,
@@ -86,6 +86,7 @@ send_mail(
     error
 )
 ```
+I have two mailing lists right now, `dev_email` and `production_email`. You can add your email to the `dev_email` list if you wanna receive emails while testing. When we're 100% done, we'll switch it to `production_email`.
 
 ## Deployment
 
