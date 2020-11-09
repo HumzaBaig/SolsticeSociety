@@ -16,22 +16,22 @@ class ReservationViewSet(viewsets.ModelViewSet):
     authentication_classes = [TokenAuthentication]
     permission_classes = [permissions.IsAuthenticated]
 
-    # def create(self, request, *args, **kwargs):
-    #     serializer = self.get_serializer(data = request.data)
-    #     serializer.is_valid(raise_exception=True)
-    #     self.perform_create(serializer)
-    #     headers = self.get_success_headers(serializer.data)
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data = request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
 
-    #     send_mail(
-    #         'New Reservation for Solstice Society',
-    #         f"{serializer.validated_data['name']} has made a reservation at {serializer.validated_data['datetime']}",
-    #         'shaheermirzacs@gmail.com',
-    #         ['ectomoplys@gmail.com'],
-    #         fail_silently=False
-    #     )
+        send_mail(
+            'New Reservation for Solstice Society',
+            f"{serializer.validated_data['name']} has made a reservation at {serializer.validated_data['datetime']}",
+            'shaheermirzacs@gmail.com',
+            ['ectomoplys@gmail.com'],
+            fail_silently=False
+        )
 
-    #     return Response(
-    #         serializer.data,
-    #         status=status.HTTP_201_CREATED,
-    #         headers=headers
-    #     )
+        return Response(
+            serializer.data,
+            status=status.HTTP_201_CREATED,
+            headers=headers
+        )
