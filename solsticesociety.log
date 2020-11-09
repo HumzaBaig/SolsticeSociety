@@ -789,3 +789,72 @@ ValueError: Missing staticfiles manifest entry for 'rest_framework/css/bootstrap
 2020-11-09 09:58:48,646 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/main.0e84a7b4.chunk.js.map HTTP/1.1" 200 3841
 2020-11-09 09:58:48,654 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
 2020-11-09 09:58:48,657 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/js/2.0afd0d0d.chunk.js.map HTTP/1.1" 200 372813
+2020-11-09 10:12:23,478 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:12:25,570 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3053
+2020-11-09 10:12:25,631 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css HTTP/1.1" 304 0
+2020-11-09 10:12:25,634 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/2.0afd0d0d.chunk.js HTTP/1.1" 304 0
+2020-11-09 10:12:25,634 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/main.0e84a7b4.chunk.js HTTP/1.1" 304 0
+2020-11-09 10:12:25,647 [Thread-4    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 10:12:25,651 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.ab7136cd.chunk.css.map HTTP/1.1" 304 0
+2020-11-09 10:12:25,653 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/main.0e84a7b4.chunk.js.map HTTP/1.1" 304 0
+2020-11-09 10:12:25,653 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/2.0afd0d0d.chunk.js.map HTTP/1.1" 304 0
+2020-11-09 10:12:35,053 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/settings.py changed, reloading.
+2020-11-09 10:12:35,526 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:12:36,217 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3053
+2020-11-09 10:12:36,282 [Thread-2    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 10:12:36,292 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 10:19:35,752 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:19:43,543 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 10:19:43,556 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 10:20:29,609 [Thread-2    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 10:20:29,614 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 10:20:31,914 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 925
+2020-11-09 10:22:44,079 [Thread-4    ] [INFO ] [django.server       ]  code 400, message Bad request version ('\x9bî\x004\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 10:22:44,079 [Thread-4    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:22:44,081 [Thread-5    ] [INFO ] [django.server       ]  code 400, message Bad request version ('}²\x88Y4\x93~h\x88nöw±à=y\x9c½9F\x84¿rf.Ñÿ+c\x03Ç\x7f\x006\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 10:22:44,081 [Thread-5    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:22:44,083 [Thread-6    ] [INFO ] [django.server       ]  code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01SÄ\x93\x9cÞÍcC\x9cÁ\x86ÂRÄw|\x18\x96ôÊÎ\x8e\x7fxî[\x02ß7@û\x17\x00\x00\x14À')
+2020-11-09 10:22:44,084 [Thread-6    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:23:50,037 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 10:23:50,106 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 10:24:18,908 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:24:22,297 [Thread-1    ] [INFO ] [django.server       ]  code 400, message Bad request version ('\x1bÔu:j{Õà²«?O\x12Ìy÷\x0e\x004\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 10:24:22,297 [Thread-1    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:24:22,299 [Thread-2    ] [INFO ] [django.server       ]  code 400, message Bad request version ('\x9a')
+2020-11-09 10:24:22,299 [Thread-2    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:24:22,301 [Thread-3    ] [INFO ] [django.server       ]  code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Kt@VxRx´®|®t%')
+2020-11-09 10:24:22,302 [Thread-3    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:25:18,637 [Thread-4    ] [INFO ] [django.server       ]  code 400, message Bad request version ('ª¦\xad-ÖØ¯²\x02OÖÈúE#ËRØß7E¨qn\x004\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 10:25:18,637 [Thread-4    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:25:18,640 [Thread-5    ] [INFO ] [django.server       ]  code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03>')
+2020-11-09 10:25:18,640 [Thread-5    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:25:18,642 [Thread-6    ] [INFO ] [django.server       ]  code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00}\x01\x00\x00y\x03\x01bÙçç£¥Ú\x9fÖ¸\x12Øòq¯f¾tØá\x9eú»\x95'ªï")
+2020-11-09 10:25:18,643 [Thread-6    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:26:25,546 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 10:27:16,759 [Thread-1    ] [INFO ] [django.server       ]  code 400, message Bad request version ('/\x02s\x004\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 10:27:16,759 [Thread-1    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:27:16,762 [Thread-2    ] [INFO ] [django.server       ]  code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x88')
+2020-11-09 10:27:16,762 [Thread-2    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:27:16,764 [Thread-3    ] [INFO ] [django.server       ]  code 400, message Bad request version ('9Â\x8b\x00\x00\x14À')
+2020-11-09 10:27:16,764 [Thread-3    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:27:58,167 [Thread-4    ] [INFO ] [django.server       ]  code 400, message Bad request version ('£M\x01ßñ\x8c8¯\x94p\x7f\x14\x96·Þ1l4\x12k¼°±D@[c4%\x07Ø\x88\x004\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 10:27:58,167 [Thread-4    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:27:58,169 [Thread-5    ] [INFO ] [django.server       ]  code 400, message Bad request version ('?\x0f×V\x88\x006\x13\x01\x13\x02\x13\x03À,À+À$À#À')
+2020-11-09 10:27:58,169 [Thread-5    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2020-11-09 10:27:58,172 [Thread-6    ] [INFO ] [django.server       ]  code 400, message Bad request version ('\x8e¦Cî\x9f\x00\x00\x14À')
+2020-11-09 10:27:58,172 [Thread-6    ] [ERROR] [django.server       ]  You're accessing the development server over HTTPS, but it only supports HTTP.
+
