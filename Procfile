@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn solsticesociety.wsgi
+web: gunicorn solsticesociety.wsgi --log-file -
