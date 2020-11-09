@@ -1,0 +1,12 @@
+2020-11-09 05:24:46,634 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 05:24:49,499 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3030
+2020-11-09 05:24:49,558 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.8c8b27cf.chunk.css HTTP/1.1" 304 0
+2020-11-09 05:24:49,562 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/2.6621ffb1.chunk.js HTTP/1.1" 304 0
+2020-11-09 05:24:49,562 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/main.07026ee7.chunk.js HTTP/1.1" 304 0
+2020-11-09 05:24:49,580 [Thread-4    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-09 05:24:49,587 [Thread-1    ] [INFO ] [django.server       ]  "GET /static/css/main.8c8b27cf.chunk.css.map HTTP/1.1" 304 0
+2020-11-09 05:24:49,587 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/js/main.07026ee7.chunk.js.map HTTP/1.1" 304 0
+2020-11-09 05:24:49,588 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/js/2.6621ffb1.chunk.js.map HTTP/1.1" 304 0
+2020-11-09 05:24:49,597 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3837
+2020-11-09 05:24:51,417 [Thread-1    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 3030
+2020-11-09 05:24:51,481 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3837
