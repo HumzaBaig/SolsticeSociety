@@ -893,3 +893,9 @@ ValueError: Missing staticfiles manifest entry for 'rest_framework/css/bootstrap
 2020-11-09 12:37:39,938 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
 2020-11-09 12:37:39,939 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-11-09 12:37:40,372 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 12:56:36,821 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 12:56:36,822 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 12:56:37,342 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-09 13:01:04,752 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-09 13:01:04,752 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-09 13:01:05,203 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
