@@ -3,7 +3,7 @@
 ## Project Setup
 
 ```bash
-brew install pipenv # if you don't have pipenv
+brew update && brew install pipenv # if you don't have pipenv
 git clone https://github.com/Revitii/solsticesociety.git
 cd solsticesociety
 pipenv install # will install everything you need by reading the Pipfile
@@ -107,8 +107,8 @@ This is the `Reservation` class which everything revolves around:
 class Reservation(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()
-    datetime = models.DateTimeField()
-    duration = models.DurationField()
+    start = models.DateTimeField()
+    end = models.DateTimeField()
     phone = models.CharField(max_length=10)
     amount_paid = models.DecimalField(max_digits=7, decimal_places=2, default=0.00)
     payment_method = models.CharField(max_length=15, default='')
@@ -120,8 +120,8 @@ This is the expected input and if/how they're validated:
 ```python
 name:           'Shaheer Mirza'             # max length
 email:          'shaheermirzacs@gmail.com'  # validated
-datetime:       '%m-%d-%Y %H:%M'            # 10-25-2006 14:30, validated
-duration:       '%H:%M:%S'                  # 01:30:00, validated
+start:          '%m-%d-%Y %H:%M'            # 10-25-2006 14:30, validated
+end:            '%m-%d-%Y %H:%M'            # 10-25-2006 14:30, validated
 phone:          '8326230049'                # validated by length
 amount_paid:    '99999.99'                  # max value
 payment_method: 'MasterCard'                # can be validated by acceptable choices
@@ -136,13 +136,13 @@ Typical JSON example:
     {
         "url": "http://127.0.0.1:8000/api/reservations/1/",
         "id": 1,
-        "datetime": "03-26-1996 15:00",
-        "name": "shaheer mirza",
-        "email": "shaheermirzacs@gmail.com",
-        "duration": "00:02:30",
+        "start": "11-10-2020 13:00",
+        "end": "11-10-2020 15:00",
+        "name": "Shaheer Mirza",
+        "email": "ectomoplys@gmail.com",
         "phone": "8326230049",
-        "amount_paid": "0.00",
-        "payment_method": ""
+        "amount_paid": "100.00",
+        "payment_method": "MasterCard"
     },
 ]
 ```
@@ -161,6 +161,19 @@ DELETE https://solsticesociety.herokuapp.com/api/reservations/<id>/
 https://solsticesociety.herokuapp.com/
 # The frontend :)
 ```
+
+## Responses
+```http
+409 Conflict
+```
+### Messages
+#### `Time Conflict: (Start|End) Time Conflict`
+Returned when the `start` or `end` arguments conflict with other reservations
+#### `Time Conflict: End must be greater than Start`
+Returned when `end < start`
+#### `Time Conflict: Minimum 1 hour required`
+Returned when `end == start`
+
 
 ## TODO
 * Query Filtering
