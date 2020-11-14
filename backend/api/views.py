@@ -19,17 +19,50 @@ class ReservationViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data = request.data)
+        serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
+
+        data = serializer.validated_data
+
+        start = data['start']
+        end = data['end']
+
+        if (end < start):
+            return Response(
+                'Time Conflict: End must be greater than Start',
+                status=status.HTTP_409_CONFLICT,
+                headers=None
+            )
+        if (end == start):
+            return Response(
+                'Time Conflict: Minimum 1 hour required',
+                status=status.HTTP_409_CONFLICT,
+                headers=None
+            )
+
+        starts_in_range = Reservation.objects.filter(start__range=[start, end])
+        ends_in_range = Reservation.objects.filter(end__range=[start, end])
+
+        if (len(starts_in_range) > 0):
+            return Response(
+                'Time Conflict: End Time Conflict',
+                status=status.HTTP_409_CONFLICT,
+                headers=None
+            )
+        if (len(ends_in_range) > 0):
+            return Response(
+                'Time Conflict: Start Time Conflict',
+                status=status.HTTP_409_CONFLICT,
+                headers=None
+            )
+
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
 
-        data = serializer.validated_data
+        date = data['start'].strftime('%m/%d/%Y at %I:%M %p')
+        duration = strfdelta((end - start))
+        final_time = data['end'].strftime('%m/%d/%Y at %I:%M %p')
         
-        date = data['datetime'].strftime('%m/%d/%Y at %I:%M %p')
-        duration = strfdelta(data['duration'], '{hours} hours {minutes} minutes')
-        final_time = add_time(data['datetime'], data['duration']).strftime('%m/%d/%Y at %I:%M %p')
-
         dev_email = ['shaheermirzacs@gmail.com']
         production_email = [
             'contact@ssbookings.com',
@@ -63,6 +96,7 @@ Thank you!
             '[Solstice Society] New Reservation',
             f"""
 Name: {data['name']}
+Email: {data['email']}
 Time: {date}
 Duration: {duration} ({final_time})
 Phone: {phone_format(data['phone'])}
@@ -83,11 +117,14 @@ Total: {format_currency(data['amount_paid'])}
 def add_time(d, delta):
     return d + delta
 
-def strfdelta(tdelta, fmt):
+def strfdelta(tdelta):
     d = {"days": tdelta.days}
     d["hours"], rem = divmod(tdelta.seconds, 3600)
-    d["minutes"], d["seconds"] = divmod(rem, 60)
-    return fmt.format(**d)
+
+    if (d["days"] > 0):
+        return f'{d["days"]} days {d["hours"]} hours'
+    else:
+        return f'{d["hours"]} hours'
 
 def format_currency(n):
     locale.setlocale(locale.LC_ALL, '')
