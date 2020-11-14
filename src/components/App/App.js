@@ -51,10 +51,13 @@ const App = () => {
       'amount_paid': '2230.98',
       'payment_method': 'Mastercard'
     }
-    setReservation(data)
-      .then(res => {
+    setReservation(data).then(res => {
         console.log(res);
-      });
+      }).then(
+        setCurrentDate({});
+        setCurrentStart({});
+        setCurrentEnd({});
+      );
   };
 
   return (
