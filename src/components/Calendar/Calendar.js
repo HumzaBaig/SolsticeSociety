@@ -24,26 +24,28 @@ const LiveCalendar = ({ allReservations, setCurrentDate }) => {
        isInitialMount.current = false;
        isSecondRender.current = true;
     } else {
-      allReservations.some((reservation) => {
-        let resMonth = parseInt(reservation.datetime.substring(0,2));
-        let resDay = parseInt(reservation.datetime.substring(3,5));
-        let resYear = parseInt(reservation.datetime.substring(6,10));
-        let startDay = selectedDayRange.from.day;
-        let startMonth = selectedDayRange.from.month;
-        let startYear = selectedDayRange.from.year;
+      if (!allReservations) {
+        allReservations.some((reservation) => {
+          let resMonth = parseInt(reservation.datetime.substring(0,2));
+          let resDay = parseInt(reservation.datetime.substring(3,5));
+          let resYear = parseInt(reservation.datetime.substring(6,10));
+          let startDay = selectedDayRange.from.day;
+          let startMonth = selectedDayRange.from.month;
+          let startYear = selectedDayRange.from.year;
 
-        if(resYear >= startYear) {
-          if(resMonth >= startMonth) {
-            if(resDay >= startDay) {
-              maximumDate.year = resYear;
-              maximumDate.month = resMonth;
-              maximumDate.day = resDay;
-              return true;
+          if(resYear >= startYear) {
+            if(resMonth >= startMonth) {
+              if(resDay >= startDay) {
+                maximumDate.year = resYear;
+                maximumDate.month = resMonth;
+                maximumDate.day = resDay;
+                return true;
+              }
             }
           }
-        }
-        return false;
-      });
+          return false;
+        });
+      }
     }
   }, [selectedDayRange.from]);
 
