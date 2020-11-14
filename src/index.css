@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Colors and Fonts */
+/* Bluish: #114B5F */
+/* Gold: #f9c947 */

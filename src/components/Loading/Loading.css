@@ -1,0 +1,22 @@
+.loadingspinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #000;
+}
+
+.loading-logo {
+  width: 50%;
+  margin-top: 30%;
+}
+
+.slogan {
+  color: #f9c947;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 7.5%;
+}

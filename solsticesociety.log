@@ -1342,3 +1342,272 @@ TypeError: send_mail() missing 1 required positional argument: 'recipient_list'
 2020-11-09 13:54:29,839 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
 2020-11-09 13:54:29,840 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-11-09 13:54:30,253 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-12 03:47:14,896 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-12 04:01:43,842 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-12 04:01:43,973 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:11:21,296 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-12 08:11:50,559 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:12:45,159 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:13:02,834 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:13:10,827 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:13:51,895 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:14:16,939 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:14:36,905 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:14:48,873 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:14:57,451 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:16:14,904 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:16:33,049 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:16:41,973 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:17:58,363 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:18:04,816 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:18:13,596 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:18:29,906 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:18:38,532 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:19:07,142 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 08:19:25,780 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:17:53,560 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-12 14:18:12,688 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:18:20,424 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:19:06,625 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:19:56,400 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:20:31,389 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:20:58,859 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:21:22,649 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:21:44,468 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:22:00,558 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:22:28,418 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:25:08,603 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:25:42,445 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:26:33,479 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:30:19,491 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:30:35,949 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:31:01,256 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:31:14,135 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:31:53,437 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 14:32:44,530 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 15:04:54,948 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 15:05:11,152 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-12 15:36:10,502 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 03:15:36,187 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-13 03:17:14,531 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-13 03:17:14,589 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 16:50:11,833 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 16:57:48,589 [Thread-3    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 16:57:48,591 [Thread-3    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 16:57:49,855 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:02:50,182 [Thread-5    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:03:20,808 [Thread-5    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:08:58,439 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:09:35,389 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:09:44,283 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:38:49,231 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:39:16,837 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:39:46,864 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:39:57,946 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:40:03,335 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:40:12,190 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:44:56,616 [Thread-8    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 17:44:56,618 [Thread-8    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 17:44:56,807 [Thread-9    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 17:44:56,808 [Thread-9    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 17:45:09,166 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:45:20,978 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:45:37,859 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:49:27,948 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 17:55:17,981 [Thread-10   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:28:07,016 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-13 19:28:17,350 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-13 19:28:17,464 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:29:50,580 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:29:52,025 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:30:05,463 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:30:15,505 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:30:20,742 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:32:11,025 [Thread-2    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 19:32:11,031 [Thread-2    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 19:32:11,660 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:32:17,705 [Thread-3    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 19:32:17,706 [Thread-3    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 19:32:18,035 [Thread-4    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 19:32:18,036 [Thread-4    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 19:32:20,566 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:32:23,883 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:33:19,993 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:33:24,179 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:33:50,505 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:34:34,284 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:34:37,777 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:36:30,584 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:36:33,736 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:36:38,759 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:36:46,834 [Thread-5    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 19:36:46,834 [Thread-5    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 19:36:49,614 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:36:57,974 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:36:59,664 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:37:22,606 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:37:29,708 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:37:52,754 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:44:56,900 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:45:01,290 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:46:38,373 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:46:41,307 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:47:03,170 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:53:02,336 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:53:45,680 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:55:41,634 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 19:56:09,705 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 20:01:19,572 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 20:05:10,495 [Thread-9    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 20:05:10,510 [Thread-9    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 20:05:11,816 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 21:59:15,714 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-13 21:59:58,977 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:04:46,277 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:04:59,348 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:05:28,129 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:05:49,751 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:06:55,437 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:07:20,040 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:12:33,930 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:15:49,764 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:16:29,693 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:18:19,881 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:18:28,687 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:19:48,861 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:20:17,454 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:20:22,207 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:21:02,895 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:22:09,876 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:22:15,439 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:23:02,919 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:23:07,348 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:23:27,778 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:23:32,050 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:23:45,838 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:24:17,765 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:24:24,657 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:24:52,880 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:24:58,848 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:28:48,257 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-13 22:29:06,917 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-13 22:29:12,165 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:31:08,851 [Thread-2    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 22:31:08,852 [Thread-2    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 22:32:52,948 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:33:28,930 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:33:58,991 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:37:12,725 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:39:33,816 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:39:39,365 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:40:08,233 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:40:15,093 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:40:34,868 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:40:43,033 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:41:09,614 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:41:27,787 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:41:51,568 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:46:35,837 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:46:40,952 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:46:44,903 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:46:55,190 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:47:10,065 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:47:29,980 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:48:12,011 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:49:39,759 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:50:16,922 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:53:43,395 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:54:14,587 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:55:08,654 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:57:00,442 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 22:57:29,096 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:07:56,526 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:08:19,950 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:09:27,881 [Thread-4    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 23:09:27,882 [Thread-4    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 23:09:38,718 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:12:06,248 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:14:03,086 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:14:57,526 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:15:50,737 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:21:59,183 [Thread-5    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 23:21:59,184 [Thread-5    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 23:24:56,565 [Thread-6    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-13 23:24:56,601 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:28:51,916 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:29:38,949 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:29:47,917 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:29:52,781 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:30:26,920 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:30:47,647 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:31:08,992 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:31:11,196 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:31:52,506 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:32:09,245 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:32:48,093 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:33:02,976 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:33:24,361 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:33:55,024 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:34:06,955 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:34:29,898 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:35:17,897 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:35:20,384 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:35:51,902 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:35:58,296 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:36:12,613 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:36:14,445 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:39:58,198 [Thread-7    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-13 23:39:58,199 [Thread-7    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-13 23:39:59,069 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:40:43,015 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:40:47,955 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:41:16,000 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:41:42,971 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:41:48,668 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:42:36,073 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:42:40,683 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:44:20,233 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:44:53,956 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:45:14,870 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:47:55,040 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:49:08,448 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:49:23,966 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:49:25,919 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:50:15,005 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:50:22,306 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:50:24,437 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:51:34,280 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:51:57,844 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:52:26,180 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:52:39,324 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:52:40,559 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:52:58,679 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:53:01,089 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:53:11,856 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:53:18,994 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:56:26,910 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:56:28,506 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:56:47,519 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:57:33,135 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-13 23:58:10,261 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:03:25,020 [Thread-8    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-14 00:03:25,021 [Thread-8    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-14 00:03:45,592 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:03:53,774 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:03:57,012 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:07:03,161 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:07:04,031 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:07:26,954 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:07:36,128 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:07:39,541 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:08:33,140 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:08:43,157 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
+2020-11-14 00:16:56,873 [Thread-10   ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-14 00:16:56,874 [Thread-10   ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-14 00:17:18,823 [Thread-11   ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-14 00:17:18,825 [Thread-11   ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-14 00:17:36,945 [Thread-12   ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-14 00:17:36,947 [Thread-12   ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-14 00:18:36,994 [Thread-13   ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-14 00:18:36,994 [Thread-13   ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-14 00:20:46,505 [Thread-14   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 7914
