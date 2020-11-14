@@ -53,10 +53,11 @@ const App = () => {
     }
     setReservation(data).then(res => {
         console.log(res);
-      }).then(
-        setCurrentDate({});
-        setCurrentStart({});
-        setCurrentEnd({});
+      }).then(() => {
+          setCurrentDate({});
+          setCurrentStart({});
+          setCurrentEnd({});
+        }
       );
   };
 
