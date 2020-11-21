@@ -10,7 +10,10 @@ function LoadingScreen() {
         size={50}
         color={"#f9c947"}
       />
-    <h1 className="slogan">Welcome to the Society.</h1>
+      <div className="slogan-holder">
+        <h2 className="mini-slogan">Welcome to</h2>
+        <h1 className="large-slogan">THE SOCIETY</h1>
+      </div>
     </div>
   );
 }

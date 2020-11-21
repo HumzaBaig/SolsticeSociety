@@ -79,6 +79,6 @@ const LiveCalendar = ({ allReservations, setCurrentDate }) => {
       />
     </div>
   );
-};
+}
 
 export default LiveCalendar;

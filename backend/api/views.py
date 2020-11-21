@@ -62,8 +62,8 @@ class ReservationViewSet(viewsets.ModelViewSet):
         date = data['start'].strftime('%m/%d/%Y at %I:%M %p')
         duration = strfdelta((end - start))
         final_time = data['end'].strftime('%m/%d/%Y at %I:%M %p')
-        
-        dev_email = ['shaheermirzacs@gmail.com']
+
+        dev_email = ['humza.baig2009@gmail.com']
         production_email = [
             'contact@ssbookings.com',
             'solviranitracks@gmail.com',
@@ -77,7 +77,7 @@ class ReservationViewSet(viewsets.ModelViewSet):
 {data['name']},
 
 Here are the details of your reservation:
-            
+
 Time: {date}
 Duration: {duration} ({final_time})
 Phone: {phone_format(data['phone'])}
@@ -90,7 +90,7 @@ Thank you!
             [serializer.validated_data['email']],
             fail_silently=False
         )
-        
+
         # Email for Solstice Society
         send_mail(
             '[Solstice Society] New Reservation',
@@ -130,5 +130,5 @@ def format_currency(n):
     locale.setlocale(locale.LC_ALL, '')
     return locale.currency(n, grouping=True)
 
-def phone_format(n): 
-        return format(int(n[:-1]), ",").replace(",", "-") + n[-1] 
+def phone_format(n):
+        return format(int(n[:-1]), ",").replace(",", "-") + n[-1]

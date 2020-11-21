@@ -12,11 +12,22 @@
   margin-top: 30%;
 }
 
-.slogan {
+.slogan-holder {
+  margin-bottom: 15%;
+}
+
+.mini-slogan {
   color: #f9c947;
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
+  font-size: 18px;
+  font-family: 'Alex Brush', sans-serif;
   text-align: center;
-  margin-bottom: 7.5%;
+  margin-bottom: 1px;
+}
+
+.large-slogan {
+  color: #f9c947;
+  font-size: 28px;
+  text-align: center;
+  font-family: 'Homepage Baukasten-Bold', sans-serif;
+  margin-top: 0;
 }

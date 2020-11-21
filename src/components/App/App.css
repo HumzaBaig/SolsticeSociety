@@ -1,7 +1,8 @@
 .App {
   width: 100%;
   height: 100%;
-  background-color: #F7F8FC;
+  /* background-color: #F7F8FC; */
+  background-color: #000;
 }
 
 .center-content {
@@ -9,30 +10,69 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F7F8FC;
+  /* background-color: #F7F8FC; */
+  background-color: #000;
 }
 
 .cta-text {
   margin-top: 12.5%;
-  margin-bottom: 12.5%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Homepage Baukasten-Bold', sans-serif;
   color: #f9c947;
-  font-weight: 400;
 }
 
 .left-text {
   align-self: flex-start;
-  margin-left: 25px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+.form-box {
+  width: 80%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  margin-left: 7%;
+  margin-right: 7%;
+  box-shadow: 0 1em 4em rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.input-box {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: none;
+  /* background-color: rgba(249, 201, 71, 0.5); */
+  font-size: 18px;
+  font-family: 'Homepage Baukasten-Book';
+  color: #424770;
+  letter-spacing: 0.025em;
+  weight: bold;
+}
+
+.input-box::placeholder {
+  color: #aab7c4;
+  -webkit-font-smoothing: antialiased;
+}
+.input-box:last-of-type {
+  margin-bottom: 15px;
+}
+
+.success-text {
+  text-align: center;
+  margin-top: 12px;
 }
 
 .submission-button {
   background-color: #f9c947;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Homepage Baukasten-Book', sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 18px;
   width: 90%;
-  border-radius: 10px;
+  border-radius: 25px;
   height: 60px;
   border-width: 0;
   margin-top: 12.5%;

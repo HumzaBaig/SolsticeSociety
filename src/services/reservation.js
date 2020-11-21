@@ -41,6 +41,8 @@ export async function setReservation(data) {
     url = 'https://solsticesociety.herokuapp.com/api/reservations/';
   }
 
+  console.log(JSON.stringify(data));
+
   try {
     const res = await fetch(url,
     {
@@ -50,10 +52,8 @@ export async function setReservation(data) {
         'Authorization': 'Token ' + token,
         'Content-Type': 'application/json'
       }),
-      body: data})
-      .then(function(response) {
-          return response.json();
-        });
+      body: JSON.stringify(data)
+    });
   } catch (e) {
     console.log(e);
   }

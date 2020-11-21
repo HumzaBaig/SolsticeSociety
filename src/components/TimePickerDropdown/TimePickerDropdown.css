@@ -1,5 +1,17 @@
 .timepicker {
   box-shadow: 0 1em 4em rgba(0, 0, 0, 0.25);
   border-style: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Homepage Baukasten-Book', sans-serif;
+  background-color: #fff;
+  width: 89vw;
+  border-radius: 15px;
+  border-style: none !important;
+  padding: 14px;
+  text-align: center;
+  font-size: 18px;
+  /* margin-top: -35px; */
+}
+
+.react-time-picker__wrapper {
+  border-style: none !important;
 }

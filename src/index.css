@@ -1,10 +1,33 @@
+@font-face {
+  font-family: 'Homepage Baukasten-Book';
+  src: local('Homepage Baukasten-Book'),
+  url(./fonts/HomepageBaukasten-Book.woff) format('woff'),
+  url(./fonts/HomepageBaukasten-Book.woff2) format('woff2'),
+  url(./fonts/HomepageBaukasten-Book.ttf) format('ttf'),
+  url(./fonts/HomepageBaukasten-Book.eot) format('eot');
+}
+@font-face {
+  font-family: 'Homepage Baukasten-Bold';
+  src: local('Homepage Baukasten-Bold'),
+  url(./fonts/HomepageBaukasten-Bold.woff) format('woff'),
+  url(./fonts/HomepageBaukasten-Bold.woff2) format('woff2'),
+  url(./fonts/HomepageBaukasten-Bold.ttf) format('ttf'),
+  url(./fonts/HomepageBaukasten-Bold.eot) format('eot');
+}
+@font-face {
+  font-family: 'Alex Brush';
+  src: local('Alex Brush'),
+  url(./fonts/AlexBrush-Regular.woff) format('woff'),
+  url(./fonts/AlexBrush-Regular.woff2) format('woff2'),
+  url(./fonts/AlexBrush-Regular.ttf) format('ttf');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'HomepageBaukasten-Book', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {
@@ -20,3 +43,4 @@ code {
 /* Colors and Fonts */
 /* Bluish: #114B5F */
 /* Gold: #f9c947 */
+/* Main Font: 'Homepage Baukasten-Book' */
