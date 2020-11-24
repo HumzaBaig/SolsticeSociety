@@ -29,8 +29,6 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // setTimeout(() => setLoading(false), 2000);
-
     const query = new URLSearchParams(window.location.search);
 
     if (query.get("success")) {
@@ -67,7 +65,8 @@ const App = () => {
       total = 1300.00 + ((hours - 4) * 200);
       total = "$" + total;
     } else {
-      total = "*4 hour minimum";
+      // total = "*4 hour minimum";
+      total = startDateTime + " --- " + endDateTime;
     }
 
     setTotal(total);
