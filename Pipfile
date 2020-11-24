@@ -13,6 +13,7 @@ gunicorn = "==20.0.4"
 whitenoise = "*"
 django-cors-headers = "*"
 django-heroku = "*"
+stripe = "*"
 
 [requires]
 python_version = "3.9"

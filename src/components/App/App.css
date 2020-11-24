@@ -55,6 +55,7 @@
 .input-box::placeholder {
   color: #aab7c4;
   -webkit-font-smoothing: antialiased;
+  font-weight: bold;
 }
 .input-box:last-of-type {
   margin-bottom: 15px;
@@ -79,6 +80,34 @@
   margin-bottom: 12.5%;
 
   box-shadow: 0 1em 4em rgba(0, 0, 0, 0.25);
+}
+
+.description {
+  border-radius: 10px;
+  border: 5px solid rgba(249, 201, 71, 0.5);
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+}
+
+.total-tag {
+  font-family: 'Homepage Baukasten-Book';
+  margin-top: -5%;
+  background-color: #fff;
+  max-width: fit-content;
+  padding: 0 5px;
+}
+
+.total-price {
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: -0.154px;
+  /* text-shadow: 5px 5px 10px rgba(249, 201, 71, .25); */
+  margin: 0;
+  text-align: center;
+  font-family: 'Homepage Baukasten-Bold';
 }
 
 @media only screen and (min-width: 600px) {

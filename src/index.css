@@ -40,6 +40,28 @@ code {
   width: 100vw;
 }
 
+#desktop-block {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #desktop-block {
+    display: flex;
+  }
+
+  #root {
+    display: none;
+  }
+}
+
 /* Colors and Fonts */
 /* Bluish: #114B5F */
 /* Gold: #f9c947 */

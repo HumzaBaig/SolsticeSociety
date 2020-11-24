@@ -1,16 +1,26 @@
 # views.py
 
+from stripe.api_resources.token import Token
+from backend.settings import BASE_URL
 from django.core.mail import send_mail
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework import views
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import viewsets, permissions, status
-from rest_framework.decorators import action
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.views import APIView
+from django.urls import reverse
 from backend.api.serializers import ReservationSerializer
 from backend.api.models import Reservation
 from datetime import datetime
 import locale
-
+import stripe
 import os
+from re import sub
+from decimal import Decimal
+from backend.settings import BASE_URL
 
 class ReservationViewSet(viewsets.ModelViewSet):
     queryset = Reservation.objects.all()
@@ -62,8 +72,10 @@ class ReservationViewSet(viewsets.ModelViewSet):
         date = data['start'].strftime('%m/%d/%Y at %I:%M %p')
         duration = strfdelta((end - start))
         final_time = data['end'].strftime('%m/%d/%Y at %I:%M %p')
+        total_amount = get_total(data['amount_paid'])
+        
 
-        dev_email = ['humza.baig2009@gmail.com']
+        dev_email = ['humza.baig2009@gmail.com', 'ectomoplys@gmail.com']
         production_email = [
             'contact@ssbookings.com',
             'solviranitracks@gmail.com',
@@ -114,6 +126,37 @@ Total: {format_currency(data['amount_paid'])}
             headers=headers
         )
 
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+@authentication_classes([TokenAuthentication])
+@csrf_exempt
+def checkout(request):
+    email = request.data['email']
+    dates = parse_request_dates(request)
+    cost = get_total_cost(dates[0], dates[1])
+
+    try:
+        checkout_session = stripe.checkout.Session.create(
+            customer_email=email,
+            payment_method_types=['card'],
+            line_items=cost,
+            mode='payment',
+            success_url = BASE_URL + '?success=true',
+            cancel_url = BASE_URL + '?canceled=true',
+        )
+        
+        return Response({
+            'id' : checkout_session.id,
+            'start' : dates[0],
+            'end' : dates[1],
+            'amount_paid' : checkout_session.amount_total,
+        })
+    except Exception as e:
+        return Response(
+            str(e),
+            status=status.HTTP_403_FORBIDDEN
+        )
+
 def add_time(d, delta):
     return d + delta
 
@@ -131,4 +174,36 @@ def format_currency(n):
     return locale.currency(n, grouping=True)
 
 def phone_format(n):
-        return format(int(n[:-1]), ",").replace(",", "-") + n[-1]
+    return format(int(n[:-1]), ",").replace(",", "-") + n[-1]
+
+def get_total(price):
+    return Decimal(sub(r'[^\d.]', '', price))
+
+def get_total_cost(start, end):
+    total_hours = int((end - start).total_seconds() / 3600)
+    print(total_hours)
+    if (total_hours <= 4):
+        return [{
+            'price' : 'price_1Hr1HHIVc7a48Sip1Mhz4JSd',
+            'quantity' : 1,
+        }]
+    else:
+        remaining_hours = total_hours - 4
+        return [{
+            'price' : 'price_1Hr1HHIVc7a48Sip1Mhz4JSd',
+            'quantity' : 1,
+        },
+        {
+            'price' : 'price_1Hr1LEIVc7a48SipRmM3j4Sw',
+            'quantity' : remaining_hours,
+        }]
+
+def parse_request_dates(request):
+    r = request.data
+    start_s = f"{r['date']['startMonth']}-{r['date']['startDay']}-{r['date']['startYear']} {int(r['start']['startTime'].split(':')[0])}:{int(r['start']['startTime'].split(':')[1])}"
+    end_s = f"{r['date']['endMonth']}-{r['date']['endDay']}-{r['date']['endYear']} {int(r['end']['endTime'].split(':')[0])}:{int(r['end']['endTime'].split(':')[1])}"
+    format = '%m-%d-%Y %H:%M'
+    start = datetime.strptime(start_s, format)
+    end = datetime.strptime(end_s, format)
+
+    return (start, end)

@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from pathlib import Path
 import django_heroku
+import stripe
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,6 +32,9 @@ ALLOWED_HOSTS = [
     '*'
 ]
 
+# Environment Set Up
+BASE_URL = 'https://localhost:3000/' if DEBUG == True else 'https://solsticesociety.herokuapp.com/'
+
 # Email Setup
 SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 
@@ -39,6 +43,10 @@ EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
 EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+# Stripe
+STRIPE_API_KEY = os.getenv('STRIPE_API_KEY')
+stripe.api_key = STRIPE_API_KEY
 
 # Application definition
 
