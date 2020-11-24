@@ -184,17 +184,17 @@ def get_total_cost(start, end):
     print(total_hours)
     if (total_hours <= 4):
         return [{
-            'price' : 'price_1Hr1HHIVc7a48Sip1Mhz4JSd',
+            'price' : 'price_1Hr7B3IVc7a48SipRXstST4S',
             'quantity' : 1,
         }]
     else:
         remaining_hours = total_hours - 4
         return [{
-            'price' : 'price_1Hr1HHIVc7a48Sip1Mhz4JSd',
+            'price' : 'price_1Hr7B3IVc7a48SipRXstST4S',
             'quantity' : 1,
         },
         {
-            'price' : 'price_1Hr1LEIVc7a48SipRmM3j4Sw',
+            'price' : 'price_1Hr7B3IVc7a48SipobTAarOX',
             'quantity' : remaining_hours,
         }]
 
