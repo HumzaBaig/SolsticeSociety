@@ -81,6 +81,28 @@
   box-shadow: 0 1em 4em rgba(0, 0, 0, 0.25);
 }
 
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+  color: #242d60;
+  margin: 0;
+  text-align: center;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+  color: #242d60;
+  margin: 0;
+  text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
   .App {
     justify-content: flex-start;

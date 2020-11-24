@@ -10,9 +10,10 @@ import CheckoutForm from '../CheckoutForm/CheckoutForm';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from '@stripe/react-stripe-js';
 import { getReservations,setReservation } from '../../services/reservation';
+import { queryAllByAltText } from '@testing-library/react';
 
+// const stripePromise = loadStripe('pk_test_51HkymfIVc7a48SipnejreYlgXjWDgmVvWzmXEqMCvcgoLFYlK4nh3exRM1EybKy59gLkZpl0ZSPfNwMhGA9dh4cx004iOS5hhO');
 const stripePromise = loadStripe('pk_live_51HkymfIVc7a48Sipa98kFzvDeTwBGAgnN618VcC0tWB3Jyam0j8Ix4x4ILx3zDPxHsqDRRkiwh1y6tditWfnhlBH00yZ43EkUK');
-
 const App = () => {
   const [loading, setLoading] = useState(true)
   const [allReservations, setAllReservations] = useState([]);
@@ -27,7 +28,17 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000)
+    // setTimeout(() => setLoading(false), 2000);
+
+    const query = new URLSearchParams(window.location.search);
+
+    if (query.get("success")) {
+      setIsOpen(true);
+    }
+
+    if (query.get("canceled")) {
+      setIsOpen(false);
+    }
   }, [])
 
   //get all reservations
@@ -37,11 +48,11 @@ const App = () => {
       .then(reservations => {
         if(mounted) {
           setAllReservations(reservations);
+          setLoading(false);
         }
       });
       return () => mounted = false;
   }, []);
-
 
 
   //post reservation
@@ -55,7 +66,7 @@ const App = () => {
     //   'amount_paid': '2230.98',
     //   'payment_method': 'Mastercard'
     // }
-    //
+    
     // setReservation(data);
   };
 
@@ -92,12 +103,23 @@ const App = () => {
                   <input
                     type="text"
                     className="input-box"
-                    placeholder="0000000000"
+                    placeholder="(555) 555-5555"
                     value={number}
                     onChange={e => setNumber(e.target.value)}
                   />
+                  <div className="description">
+                    <h3>Total</h3>
+                    <h5>$20.00</h5>
+                  </div>
                   <Elements stripe={stripePromise}>
-                    <CheckoutForm setIsOpen={setIsOpen} />
+                    <CheckoutForm
+                      name={name}
+                      email={email}
+                      phone={number}
+                      date={currentDate}
+                      start={currentStart}
+                      end={currentEnd}
+                    />
                   </Elements>
                 </div>
             </div>
