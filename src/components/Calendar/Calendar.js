@@ -5,7 +5,7 @@ import { Calendar, utils } from 'react-modern-calendar-datepicker';
 
 const LiveCalendar = ({ allReservations, setCurrentDate }) => {
   const isInitialMount = useRef(true); // reference to make sure datetime check doesn't run on initial render
-  const isSecondRender = useRef(true); // reference to make sure datetime check doesn't run on initial render
+  const isSecondRender = useRef(true); // reference to make sure datetime check doesn't run on second render
 
   const [selectedDayRange, setSelectedDayRange] = useState({
     from: null,
@@ -61,6 +61,9 @@ const LiveCalendar = ({ allReservations, setCurrentDate }) => {
         endMonth: selectedDayRange.to.month,
         endYear: selectedDayRange.to.year
       });
+
+      isInitialMount.current = true;
+      isSecondRender.current = true;
     }
   }, [selectedDayRange.to]);
 
