@@ -62,7 +62,7 @@ const App = () => {
     var startDateTime = new Date(currentDate.startMonth + "-" + currentDate.startDay + "-" + currentDate.startYear + " " + currentStart.startTime);
     var endDateTime = new Date(currentDate.endMonth + "-" + currentDate.endDay + "-" + currentDate.endYear + " " + currentEnd.endTime);
 
-    hours = Math.abs(startDateTime - endDateTime);
+    hours = Math.abs(startDateTime - endDateTime) / (1000 * 60 * 60);
     if (hours >= 4 ) {
       total = 1300.00 + ((hours - 4) * 200);
       total = "$" + total;
