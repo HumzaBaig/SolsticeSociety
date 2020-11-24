@@ -2078,6 +2078,7 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-11-24 19:37:40,647 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
 2020-11-24 19:38:29,054 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
 2020-11-24 19:39:31,917 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+<<<<<<< HEAD
 2020-11-24 20:10:19,492 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
 2020-11-24 20:10:26,747 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
 2020-11-24 20:10:49,527 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /checkout/ HTTP/1.1" 200 0
@@ -2161,3 +2162,14 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-11-24 20:47:14,240 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
 2020-11-24 20:47:16,203 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-11-24 20:47:16,329 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+=======
+2020-11-24 19:53:44,749 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 19:54:31,134 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 19:59:29,290 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:11:34,356 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:16:48,163 [Thread-4    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-24 20:16:48,166 [Thread-4    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-24 20:16:48,285 [Thread-5    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-24 20:16:48,286 [Thread-5    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
+2020-11-24 20:16:50,018 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+>>>>>>> 18586782ff1c6074a9294450c2415cc7600fe376
