@@ -65,8 +65,7 @@ const App = () => {
       total = 1300.00 + ((hours - 4) * 200);
       total = "$" + total;
     } else {
-      // total = "*4 hour minimum";
-      total = startDateTime + " --- " + endDateTime;
+      total = "Minimum reservation is 4 hours";
     }
 
     setTotal(total);

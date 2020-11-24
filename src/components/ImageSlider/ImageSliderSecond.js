@@ -5,7 +5,7 @@ import './ImageSliderSecond.css';
 const ImageSliderSecond = () => {
   var settings = {
     dots: true,
-    arrows: false,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

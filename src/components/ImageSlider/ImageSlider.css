@@ -3,3 +3,11 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+
+.slick-prev {
+    left: 2%;
+    z-index: 1;
+}
+.slick-next {
+    right: 2%;
+}

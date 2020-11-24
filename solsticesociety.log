@@ -2173,3 +2173,14 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-11-24 20:16:48,286 [Thread-5    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 179
 2020-11-24 20:16:50,018 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
 >>>>>>> 18586782ff1c6074a9294450c2415cc7600fe376
+2020-11-24 21:50:23,160 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 21:58:12,069 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:01:00,747 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:01:36,007 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:02:00,334 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:02:17,047 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:04:26,037 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:04:27,499 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:04:59,752 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:05:17,249 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 22:05:37,508 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
