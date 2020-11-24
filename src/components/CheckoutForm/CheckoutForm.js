@@ -79,6 +79,7 @@ const CheckoutForm = (props) => {
     if (result.error) {
       alert(result.error.message);
     } else {
+      // console.log(token);
       if (process.env.NODE_ENV === 'development') {
         url = 'http://127.0.0.1:8000/api/reservations/';
       } else {

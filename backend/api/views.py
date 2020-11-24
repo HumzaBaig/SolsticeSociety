@@ -93,7 +93,6 @@ Here are the details of your reservation:
 Time: {date}
 Duration: {duration} ({final_time})
 Phone: {phone_format(data['phone'])}
-Payment Method: {data['payment_method']}
 Total: {format_currency(data['amount_paid'])}
 
 Thank you!
@@ -112,7 +111,6 @@ Email: {data['email']}
 Time: {date}
 Duration: {duration} ({final_time})
 Phone: {phone_format(data['phone'])}
-Payment Method: {data['payment_method']}
 Total: {format_currency(data['amount_paid'])}
             """,
             'revitiidevelopment@gmail.com',
@@ -136,6 +134,7 @@ def checkout(request):
     cost = get_total_cost(dates[0], dates[1])
 
     try:
+        print(BASE_URL)
         checkout_session = stripe.checkout.Session.create(
             customer_email=email,
             payment_method_types=['card'],
@@ -185,16 +184,19 @@ def get_total_cost(start, end):
     if (total_hours <= 4):
         return [{
             'price' : 'price_1Hr7B3IVc7a48SipRXstST4S',
+            # 'price' : 'price_1Hr1HHIVc7a48Sip1Mhz4JSd',
             'quantity' : 1,
         }]
     else:
         remaining_hours = total_hours - 4
         return [{
             'price' : 'price_1Hr7B3IVc7a48SipRXstST4S',
+            # 'price' : 'price_1Hr1HHIVc7a48Sip1Mhz4JSd',
             'quantity' : 1,
         },
         {
             'price' : 'price_1Hr7B3IVc7a48SipobTAarOX',
+            # 'price' : 'price_1Hr1LEIVc7a48SipRmM3j4Sw',
             'quantity' : remaining_hours,
         }]
 

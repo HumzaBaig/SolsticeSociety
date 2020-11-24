@@ -73,6 +73,8 @@ const App = () => {
     setTotal(total);
   }, [currentDate, currentEnd, currentStart]);
 
+  const safariRenderHack = { opacity: total % 2 ? 1 : 0.99 };
+
   //post reservation
   const showModal = () => {
     // let data = {
@@ -125,7 +127,7 @@ const App = () => {
                     value={number}
                     onChange={e => setNumber(e.target.value)}
                   />
-                  <div className="description">
+                  <div className="description" style={safariRenderHack}>
                     <h3 className="total-tag">Total Price:</h3>
                     <h5 className="total-price">{total}</h5>
                   </div>

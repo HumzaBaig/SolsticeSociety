@@ -2078,3 +2078,86 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-11-24 19:37:40,647 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
 2020-11-24 19:38:29,054 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
 2020-11-24 19:39:31,917 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:10:19,492 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:10:26,747 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:10:49,527 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /checkout/ HTTP/1.1" 200 0
+2020-11-24 20:10:49,537 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-11-24 20:10:49,537 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-11-24 20:12:19,549 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:12:24,708 [Thread-1    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-11-24 20:12:25,241 [Thread-1    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2020-11-24 20:12:25,241 [Thread-1    ] [INFO ] [stripe              ]  error_code=None error_message='You must provide either price or price_data for each line item when using prices.' error_param=None error_type=invalid_request_error message='Stripe API error received'
+2020-11-24 20:12:25,242 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-11-24 20:12:25,242 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 111
+2020-11-24 20:13:05,046 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-24 20:13:05,641 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:13:07,044 [Thread-1    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-11-24 20:13:07,774 [Thread-1    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2020-11-24 20:13:07,778 [Thread-1    ] [INFO ] [django.server       ]  "POST /checkout/ HTTP/1.1" 200 155
+2020-11-24 20:14:51,653 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-24 20:14:52,251 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:24:08,406 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:24:59,950 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/settings.py changed, reloading.
+2020-11-24 20:25:00,533 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:28:08,345 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/settings.py changed, reloading.
+2020-11-24 20:28:08,968 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:31:03,440 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/settings.py changed, reloading.
+2020-11-24 20:31:03,440 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-24 20:31:04,055 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:31:15,385 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:31:45,680 [Thread-1    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-11-24 20:31:45,680 [Thread-1    ] [DEBUG] [stripe              ]  api_version=None message='Post details' post_data=customer_email=sam%40gmail.com&payment_method_types[0]=card&line_items[0][price]=price_1Hr1HHIVc7a48Sip1Mhz4JSd&line_items[0][quantity]=1&line_items[1][price]=price_1Hr1LEIVc7a48SipRmM3j4Sw&line_items[1][quantity]=44&mode=payment&success_url=https%3A%2F%2Flocalhost%3A3000%2F%3Fsuccess%3Dtrue&cancel_url=https%3A%2F%2Flocalhost%3A3000%2F%3Fcanceled%3Dtrue
+2020-11-24 20:31:45,727 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  Starting new HTTPS connection (1): api.stripe.com:443
+2020-11-24 20:31:46,401 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/1.1" 200 872
+2020-11-24 20:31:46,402 [Thread-1    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2020-11-24 20:31:46,402 [Thread-1    ] [DEBUG] [stripe              ]  body='{\n  "id": "cs_test_b1PrLzO8jp0Vd2s9AbF0MB13jXkd9UZXXiI7GwePdcDcZ3UUVK1SSYL0NE",\n  "object": "checkout.session",\n  "allow_promotion_codes": null,\n  "amount_subtotal": 1010000,\n  "amount_total": 1010000,\n  "billing_address_collection": null,\n  "cancel_url": "https://localhost:3000/?canceled=true",\n  "client_reference_id": null,\n  "currency": "usd",\n  "customer": null,\n  "customer_email": "sam@gmail.com",\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n  },\n  "mode": "payment",\n  "payment_intent": "pi_1Hr8AwIVc7a48SipzR447vY1",\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "setup_intent": null,\n  "shipping": null,\n  "shipping_address_collection": null,\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "https://localhost:3000/?success=true",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_tax": 0\n  }\n}\n' message='API response body'
+2020-11-24 20:31:46,402 [Thread-1    ] [DEBUG] [stripe              ]  link=https://dashboard.stripe.com/test/logs/req_BiltDsEdM7jL42 message='Dashboard link for request'
+2020-11-24 20:31:46,405 [Thread-1    ] [INFO ] [django.server       ]  "POST /checkout/ HTTP/1.1" 200 155
+2020-11-24 20:34:42,314 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:36:20,150 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/settings.py changed, reloading.
+2020-11-24 20:36:20,150 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-24 20:36:20,744 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:36:36,080 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:37:16,043 [Thread-1    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-11-24 20:37:16,044 [Thread-1    ] [DEBUG] [stripe              ]  api_version=None message='Post details' post_data=customer_email=sam%40gmail.com&payment_method_types[0]=card&line_items[0][price]=price_1Hr1HHIVc7a48Sip1Mhz4JSd&line_items[0][quantity]=1&line_items[1][price]=price_1Hr1LEIVc7a48SipRmM3j4Sw&line_items[1][quantity]=44&mode=payment&success_url=https%3A%2F%2Flocalhost%3A3000%2F%3Fsuccess%3Dtrue&cancel_url=https%3A%2F%2Flocalhost%3A3000%2F%3Fcanceled%3Dtrue
+2020-11-24 20:37:16,124 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  Starting new HTTPS connection (1): api.stripe.com:443
+2020-11-24 20:37:16,790 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/1.1" 200 872
+2020-11-24 20:37:16,791 [Thread-1    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2020-11-24 20:37:16,791 [Thread-1    ] [DEBUG] [stripe              ]  body='{\n  "id": "cs_test_b1j01N3iU5YMoa3acdYUNwGAFq19VFxf0JL81iAUNIgzbhjubaaqRcx49M",\n  "object": "checkout.session",\n  "allow_promotion_codes": null,\n  "amount_subtotal": 1010000,\n  "amount_total": 1010000,\n  "billing_address_collection": null,\n  "cancel_url": "https://localhost:3000/?canceled=true",\n  "client_reference_id": null,\n  "currency": "usd",\n  "customer": null,\n  "customer_email": "sam@gmail.com",\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n  },\n  "mode": "payment",\n  "payment_intent": "pi_1Hr8GGIVc7a48Sipez2Ec4ju",\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "setup_intent": null,\n  "shipping": null,\n  "shipping_address_collection": null,\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "https://localhost:3000/?success=true",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_tax": 0\n  }\n}\n' message='API response body'
+2020-11-24 20:37:16,792 [Thread-1    ] [DEBUG] [stripe              ]  link=https://dashboard.stripe.com/test/logs/req_ywccQODhtO4TrD message='Dashboard link for request'
+2020-11-24 20:37:16,793 [Thread-1    ] [INFO ] [django.server       ]  "POST /checkout/ HTTP/1.1" 200 155
+2020-11-24 20:38:07,944 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-24 20:38:07,945 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-24 20:38:08,549 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:38:21,498 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-24 20:38:24,193 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:38:59,353 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:39:14,314 [Thread-1    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-11-24 20:39:14,315 [Thread-1    ] [DEBUG] [stripe              ]  api_version=None message='Post details' post_data=customer_email=sam%40gmail.com&payment_method_types[0]=card&line_items[0][price]=price_1Hr1HHIVc7a48Sip1Mhz4JSd&line_items[0][quantity]=1&line_items[1][price]=price_1Hr1LEIVc7a48SipRmM3j4Sw&line_items[1][quantity]=44&mode=payment&success_url=https%3A%2F%2Flocalhost%3A3000%2F%3Fsuccess%3Dtrue&cancel_url=https%3A%2F%2Flocalhost%3A3000%2F%3Fcanceled%3Dtrue
+2020-11-24 20:39:14,384 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  Starting new HTTPS connection (1): api.stripe.com:443
+2020-11-24 20:39:15,029 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/1.1" 200 872
+2020-11-24 20:39:15,029 [Thread-1    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2020-11-24 20:39:15,029 [Thread-1    ] [DEBUG] [stripe              ]  body='{\n  "id": "cs_test_b1EvthBtwExTjKXgO5ugFgcsD6JiWpEZKfsLBNrnNaME8dGGzK0bZC7Vxg",\n  "object": "checkout.session",\n  "allow_promotion_codes": null,\n  "amount_subtotal": 1010000,\n  "amount_total": 1010000,\n  "billing_address_collection": null,\n  "cancel_url": "https://localhost:3000/?canceled=true",\n  "client_reference_id": null,\n  "currency": "usd",\n  "customer": null,\n  "customer_email": "sam@gmail.com",\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n  },\n  "mode": "payment",\n  "payment_intent": "pi_1Hr8IAIVc7a48SipdUZ0RkBz",\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "setup_intent": null,\n  "shipping": null,\n  "shipping_address_collection": null,\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "https://localhost:3000/?success=true",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_tax": 0\n  }\n}\n' message='API response body'
+2020-11-24 20:39:15,030 [Thread-1    ] [DEBUG] [stripe              ]  link=https://dashboard.stripe.com/test/logs/req_GopmQpj0p4YziV message='Dashboard link for request'
+2020-11-24 20:39:15,031 [Thread-1    ] [INFO ] [django.server       ]  "POST /checkout/ HTTP/1.1" 200 155
+2020-11-24 20:40:10,317 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/settings.py changed, reloading.
+2020-11-24 20:40:10,318 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-24 20:40:10,898 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:40:31,417 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:40:53,584 [Thread-1    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-11-24 20:40:53,585 [Thread-1    ] [DEBUG] [stripe              ]  api_version=None message='Post details' post_data=customer_email=sam%40gmail.com&payment_method_types[0]=card&line_items[0][price]=price_1Hr1HHIVc7a48Sip1Mhz4JSd&line_items[0][quantity]=1&line_items[1][price]=price_1Hr1LEIVc7a48SipRmM3j4Sw&line_items[1][quantity]=44&mode=payment&success_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fsuccess%3Dtrue&cancel_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fcanceled%3Dtrue
+2020-11-24 20:40:53,625 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  Starting new HTTPS connection (1): api.stripe.com:443
+2020-11-24 20:40:54,224 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/1.1" 200 870
+2020-11-24 20:40:54,225 [Thread-1    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2020-11-24 20:40:54,225 [Thread-1    ] [DEBUG] [stripe              ]  body='{\n  "id": "cs_test_b1YVKbcUyspwX2LgZFlF0JOOM4fuKxPxOTfi1zVVMuiOjwJXaXLpOUewWC",\n  "object": "checkout.session",\n  "allow_promotion_codes": null,\n  "amount_subtotal": 1010000,\n  "amount_total": 1010000,\n  "billing_address_collection": null,\n  "cancel_url": "http://localhost:3000/?canceled=true",\n  "client_reference_id": null,\n  "currency": "usd",\n  "customer": null,\n  "customer_email": "sam@gmail.com",\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n  },\n  "mode": "payment",\n  "payment_intent": "pi_1Hr8JmIVc7a48SipQsjxmG3r",\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "setup_intent": null,\n  "shipping": null,\n  "shipping_address_collection": null,\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "http://localhost:3000/?success=true",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_tax": 0\n  }\n}\n' message='API response body'
+2020-11-24 20:40:54,225 [Thread-1    ] [DEBUG] [stripe              ]  link=https://dashboard.stripe.com/test/logs/req_cxXmDG7eQoJTzL message='Dashboard link for request'
+2020-11-24 20:40:54,227 [Thread-1    ] [INFO ] [django.server       ]  "POST /checkout/ HTTP/1.1" 200 155
+2020-11-24 20:41:11,226 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:41:25,798 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-24 20:45:57,250 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:46:12,947 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-24 20:47:13,675 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/shaheermirza/Development/Revitii/solsticesociety/backend/api/views.py changed, reloading.
+2020-11-24 20:47:13,675 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-24 20:47:14,240 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-24 20:47:16,203 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-24 20:47:16,329 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector

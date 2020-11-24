@@ -26,14 +26,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'pzo9ppp=_ub%a61$(8ou(x3t(f!+ae7=i50z0%d(_j#vqp705_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DJANGO_DEBUG', True) == 'False'
+DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = [
     '*'
 ]
 
 # Environment Set Up
-BASE_URL = 'https://localhost:3000/' if DEBUG == True else 'https://solsticesociety.herokuapp.com/'
+BASE_URL = 'http://localhost:3000/' if DEBUG == True else 'https://solsticesociety.herokuapp.com/'
 
 # Email Setup
 SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
@@ -47,6 +47,7 @@ EMAIL_USE_TLS = True
 # Stripe
 STRIPE_API_KEY = os.getenv('STRIPE_API_KEY')
 stripe.api_key = STRIPE_API_KEY
+print('hello')
 
 # Application definition
 
@@ -77,8 +78,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-SESSION_COOKIE_SECURE = not DEBUG
-CSRF_COOKIE_SECURE = not DEBUG
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
 
 ROOT_URLCONF = 'backend.urls'
 
