@@ -39,18 +39,18 @@ const CheckoutForm = (props) => {
     event.preventDefault();
 
     const stripe = await stripePromise;
-    console.log(props.start);
 
     var token = '';
     var url = '';
 
     if (process.env.NODE_ENV === 'development') {
-      token = '7622fb39205e7d329e8776c3fe02c7cd5a329454';
+      token = 'f5fb9a93aca1d7fddbffcada2b29f5dcc65a8698';
       url = 'http://127.0.0.1:8000/checkout/';
     } else {
       token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
       url = 'https://solsticesociety.herokuapp.com/checkout/';
     }
+    console.log(token);
 
     const response = await fetch(url, {
       method: 'POST',
@@ -71,22 +71,15 @@ const CheckoutForm = (props) => {
 
     const session = await response.json();
 
-    // When the customer clicks on the b utton, redirect them to Checkout
-    const result = await stripe.redirectToCheckout({
-      sessionId: session.id
-    });
-
-    if (result.error) {
-      alert(result.error.message);
+    // console.log(token);
+    if (process.env.NODE_ENV === 'development') {
+      url = 'http://127.0.0.1:8000/api/reservations/';
     } else {
-      // console.log(token);
-      if (process.env.NODE_ENV === 'development') {
-        url = 'http://127.0.0.1:8000/api/reservations/';
-      } else {
-        url = 'https://solsticesociety.herokuapp.com/api/reservations/';
-      }
+      url = 'https://solsticesociety.herokuapp.com/api/reservations/';
+    }
 
-      response = await fetch(url, {
+    try {
+      const response = await fetch(url, {
         method: 'POST',
         withCredentials: true,
         headers: new Headers({
@@ -99,14 +92,46 @@ const CheckoutForm = (props) => {
           start: session.start,
           end: session.end,
           phone: props.phone,
-          amount_paid: session.amount_paid,
-          payment_method: '',
+          amount_paid: String(session.amount_paid).substring(1),
         })
       });
 
-      if (result.error) {
-        alert(result.error.message);
-      }
+      var reservation = await response.json();
+
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.id
+      }).then(async (result) => {
+        console.log('stripe failure');
+        if (result.error) {
+          if (process.env.NODE_ENV === 'development') {
+            url = 'http://127.0.0.1:8000/api/reservations/' + reservation.id + '/';
+          } else {
+            url = 'https://solsticesociety.herokuapp.com/api/reservations/' + reservation.id + '/';
+          }
+
+          const response = await fetch(url, {
+            method: 'DELETE',
+            withCredentials: true,
+            headers: new Headers({
+              'Authorization': 'Token ' + token,
+              'Content-Type': 'application/json'
+            }),
+            body: JSON.stringify({
+              name: props.name,
+              email: props.email,
+              start: session.start,
+              end: session.end,
+              phone: props.phone,
+              amount_paid: String(session.amount_paid).substring(1),
+            })
+          });
+
+          alert(result.error.message);
+        } 
+      });
+
+    } catch (e) {
+      console.log(e);
     }
   }
 

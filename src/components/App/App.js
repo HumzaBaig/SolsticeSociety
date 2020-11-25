@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import LoadingScreen from '../Loading/Loading';
 import LiveCalendar from '../Calendar/Calendar';
 import ImageSlider from '../ImageSlider/ImageSlider';

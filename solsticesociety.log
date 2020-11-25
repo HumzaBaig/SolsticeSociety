@@ -2195,3 +2195,7 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-11-24 22:27:14,467 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
 2020-11-24 22:28:30,635 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
 2020-11-24 22:28:33,210 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 14911
+2020-11-25 03:37:55,070 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-25 03:38:01,427 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
+2020-11-25 03:38:55,932 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-25 03:38:56,051 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector

@@ -5,7 +5,7 @@ var url = '';
 export async function getReservations() {
 
   if (process.env.NODE_ENV === 'development') {
-    token = '7622fb39205e7d329e8776c3fe02c7cd5a329454';
+    token = 'f5fb9a93aca1d7fddbffcada2b29f5dcc65a8698';
     url = 'http://127.0.0.1:8000/api/reservations/';
   } else {
     token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
@@ -34,7 +34,7 @@ export async function getReservations() {
 export async function setReservation(data) {
 
   if (process.env.NODE_ENV === 'development') {
-    token = '7622fb39205e7d329e8776c3fe02c7cd5a329454';
+    token = 'f5fb9a93aca1d7fddbffcada2b29f5dcc65a8698';
     url = 'http://127.0.0.1:8000/api/reservations/';
   } else {
     token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';

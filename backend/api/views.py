@@ -33,7 +33,6 @@ class ReservationViewSet(viewsets.ModelViewSet):
         serializer.is_valid(raise_exception=True)
 
         data = serializer.validated_data
-
         start = data['start']
         end = data['end']
 
@@ -134,7 +133,6 @@ def checkout(request):
     cost = get_total_cost(dates[0], dates[1])
 
     try:
-        print(BASE_URL)
         checkout_session = stripe.checkout.Session.create(
             customer_email=email,
             payment_method_types=['card'],
@@ -143,13 +141,17 @@ def checkout(request):
             success_url = BASE_URL + '?success=true',
             cancel_url = BASE_URL + '?canceled=true',
         )
+
+        start = dates[0].strftime('%m-%d-%Y %H:%M')
+        end = dates[1].strftime('%m-%d-%Y %H:%M')
         
         return Response({
             'id' : checkout_session.id,
-            'start' : dates[0],
-            'end' : dates[1],
+            'start' : start,
+            'end' : end,
             'amount_paid' : checkout_session.amount_total,
-        })
+        },
+        status=status.HTTP_200_OK)
     except Exception as e:
         return Response(
             str(e),
