@@ -75,7 +75,7 @@ const App = () => {
     }
 
     setTotal(total);
-  }, [currentDate, currentEnd, currentStart]);
+  }, [currentDate, currentEnd, currentStart, total]);
 
 
   const formValidation = () => {
