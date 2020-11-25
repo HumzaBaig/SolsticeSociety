@@ -2207,3 +2207,4 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-11-25 03:44:04,582 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
 2020-11-25 03:45:43,933 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
 2020-11-25 03:45:45,545 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
+2020-11-25 16:03:33,869 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
