@@ -63,17 +63,15 @@ const App = () => {
     var total = 0.00;
     var hours = 0;
 
-    var startDateTime = new Date(Date.parse(currentDate.startMonth + "-" + currentDate.startDay + "-" + currentDate.startYear + " " + currentStart.startTime));
-    var endDateTime = new Date(currentDate.endMonth + "-" + currentDate.endDay + "-" + currentDate.endYear + " " + currentEnd.endTime);
+    var startDateTime = new Date(Date.parse(currentDate.startMonth + "/" + currentDate.startDay + "/" + currentDate.startYear + " " + currentStart.startTime));
+    var endDateTime = new Date(currentDate.endMonth + "/" + currentDate.endDay + "/" + currentDate.endYear + " " + currentEnd.endTime);
 
     hours = Math.abs(startDateTime - endDateTime) / (1000 * 60 * 60);
     if (hours >= 4 ) {
       total = 1300.00 + ((hours - 4) * 200);
       total = "$" + total;
     } else {
-      total = 'start: ' + startDateTime;
-      total += 'end: ' + endDateTime;
-      // total = "Minimum reservation is 4 hours";
+      total = "Minimum reservation is 4 hours";
     }
 
     setTotal(total);
