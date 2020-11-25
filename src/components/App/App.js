@@ -15,6 +15,8 @@ import { queryAllByAltText } from '@testing-library/react';
 // const stripePromise = loadStripe('pk_test_51HkymfIVc7a48SipnejreYlgXjWDgmVvWzmXEqMCvcgoLFYlK4nh3exRM1EybKy59gLkZpl0ZSPfNwMhGA9dh4cx004iOS5hhO');
 const stripePromise = loadStripe('pk_live_51HkymfIVc7a48Sipa98kFzvDeTwBGAgnN618VcC0tWB3Jyam0j8Ix4x4ILx3zDPxHsqDRRkiwh1y6tditWfnhlBH00yZ43EkUK');
 const App = () => {
+  const isInitialMountForm = useRef(true); // reference to make sure form validation doesn't run on initial render
+
   const [loading, setLoading] = useState(true)
   const [allReservations, setAllReservations] = useState([]);
   const [currentDate, setCurrentDate] = useState({});
@@ -25,6 +27,10 @@ const App = () => {
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
   const [total, setTotal] = useState();
+
+  const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [numberError, setNumberError] = useState('');
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -71,6 +77,37 @@ const App = () => {
     setTotal(total);
   }, [currentDate, currentEnd, currentStart]);
 
+
+  const formValidation = () => {
+    var regex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
+
+    if (name === "") {
+      setNameError('Name cant be blank!');
+    }
+    if (email === "") {
+      setEmailError('Email cant be blank!');
+    }
+    if (number === "") {
+      setNumberError('Phone Number cant be blank!');
+    }
+    if (number.length !== 10) {
+      setNumberError('This is not a valid phone number!');
+    }
+    if (regex.test(email)) {
+      setEmailError('This is not a valid email address!');
+    }
+  }
+
+  useEffect(() => {
+    if (isInitialMountForm) {
+      isInitialMountForm.current = false;
+      return;
+    }
+
+    formValidation();
+
+  }, [name, email, number]);
+
   const safariRenderHack = { opacity: total % 2 ? 1 : 0.99 };
 
   //post reservation
@@ -111,6 +148,7 @@ const App = () => {
                     value={name}
                     onChange={e => setName(e.target.value)}
                   />
+                  { nameError && <p>{nameError}</p> }
                   <input
                     type="email"
                     className="input-box"
@@ -118,6 +156,7 @@ const App = () => {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                   />
+                { emailError && <p>{emailError}</p> }
                   <input
                     type="text"
                     className="input-box"
@@ -125,6 +164,7 @@ const App = () => {
                     value={number}
                     onChange={e => setNumber(e.target.value)}
                   />
+                { numberError && <p>{numberError}</p> }
                   <div className="description" style={safariRenderHack}>
                     <h3 className="total-tag">Total Price:</h3>
                     <h5 className="total-price">{total}</h5>
