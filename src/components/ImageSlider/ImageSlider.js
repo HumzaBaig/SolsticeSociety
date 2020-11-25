@@ -14,11 +14,16 @@ const ImageSlider = () => {
 
   return (
     <Slider {...settings}>
-      <div>
-        <video autoPlay muted className="slider-image">
-          <source src="https://res.cloudinary.com/dzixj0ktk/video/upload/v1605808078/IMG_2968_eozlvg.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-        </video>
+      <div dangerouslySetInnerHTML={{ __html: `
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          src="https://res.cloudinary.com/dzixj0ktk/video/upload/v1605808078/IMG_2968_eozlvg.mp4"
+          class="slider-image"
+        />
+      ` }}>
       </div>
       <div>
         <img
