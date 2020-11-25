@@ -20,7 +20,7 @@ const ImageSlider = () => {
           muted
           autoplay
           playsinline
-          src="https://res.cloudinary.com/dzixj0ktk/video/upload/v1605808078/IMG_2968_eozlvg.mp4"
+          src="https://res.cloudinary.com/dzixj0ktk/video/upload/ac_none/v1605808078/IMG_2968_eozlvg.mp4"
           class="slider-image"
         />
       ` }}>
