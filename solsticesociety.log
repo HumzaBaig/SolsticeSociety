@@ -2232,3 +2232,10 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-11-25 16:45:16,738 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
 2020-11-25 16:49:41,952 [Thread-10   ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
 2020-11-25 16:49:41,969 [Thread-10   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
+2020-11-25 17:16:36,055 [Thread-11   ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-25 17:16:36,058 [Thread-11   ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-25 17:17:03,594 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
+2020-11-25 17:18:17,040 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
+2020-11-25 17:21:59,773 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2
+2020-11-25 17:27:27,367 [Thread-13   ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-25 17:27:27,393 [Thread-13   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 2

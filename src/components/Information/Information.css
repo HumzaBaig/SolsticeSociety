@@ -1,5 +1,13 @@
+.info-container {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
 .info-text {
   color: #f9c947;
   font-family: 'Homepage Baukasten-Book';
-  padding: 5px;
 }
