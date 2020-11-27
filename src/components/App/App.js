@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState, useEffect, useRef } from 'react';
 import LoadingScreen from '../Loading/Loading';
 import LiveCalendar from '../Calendar/Calendar';
-import ImageSlider from '../ImageSlider/ImageSlider';
+import Video from '../VideoPlayer/VideoPlayer';
 import TimePickerDropdown from '../TimePickerDropdown/TimePickerDropdown';
 import InformationSection from '../Information/Information';
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
@@ -59,23 +59,23 @@ const App = () => {
       return () => mounted = false;
   }, []);
 
-  useEffect(() => {
-    var total = 0.00;
-    var hours = 0;
-
-    var startDateTime = new Date(Date.parse(currentDate.startMonth + "/" + currentDate.startDay + "/" + currentDate.startYear + " " + currentStart.startTime));
-    var endDateTime = new Date(currentDate.endMonth + "/" + currentDate.endDay + "/" + currentDate.endYear + " " + currentEnd.endTime);
-
-    hours = Math.abs(startDateTime - endDateTime) / (1000 * 60 * 60);
-    if (hours >= 4 ) {
-      total = 1300.00 + ((hours - 4) * 200);
-      total = "$" + total;
-    } else {
-      total = "Minimum reservation is 4 hours";
-    }
-
-    setTotal(total);
-  }, [currentDate, currentEnd, currentStart, total]);
+  // useEffect(() => {
+  //   var total = 0.00;
+  //   var hours = 0;
+  //
+  //   var startDateTime = new Date(Date.parse(currentDate.startMonth + "/" + currentDate.startDay + "/" + currentDate.startYear + " " + currentStart.startTime));
+  //   var endDateTime = new Date(currentDate.endMonth + "/" + currentDate.endDay + "/" + currentDate.endYear + " " + currentEnd.endTime);
+  //
+  //   hours = Math.abs(startDateTime - endDateTime) / (1000 * 60 * 60);
+  //   if (hours >= 4 ) {
+  //     total = 1300.00 + ((hours - 4) * 200);
+  //     total = "$" + total;
+  //   } else {
+  //     total = "Minimum reservation is 4 hours";
+  //   }
+  //
+  //   setTotal(total);
+  // }, [currentDate, currentEnd, currentStart, total]);
 
 
   const formValidation = () => {
@@ -131,7 +131,7 @@ const App = () => {
       <div className="App">
         {isOpen === false ? (
           <>
-            <ImageSlider />
+            <Video />
             <div className="center-content">
               <h2 className="cta-text">Make a Reservation:</h2>
               <LiveCalendar allReservations={allReservations} setCurrentDate={setCurrentDate} />
@@ -184,7 +184,7 @@ const App = () => {
           </>
         ) : (
           <>
-            <ImageSlider />
+            <Video />
             <br />
             <br />
             <br />

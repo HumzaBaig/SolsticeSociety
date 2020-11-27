@@ -44,6 +44,30 @@ const ImageSliderSecond = () => {
           src="https://res.cloudinary.com/dzixj0ktk/image/upload/v1605286529/yacht-pic-8_ifbgb2.jpg"
           alt="Eighth Picture of Yacht"/>
       </div>
+      <div>
+        <img
+          className="slider-image-second"
+          src="https://res.cloudinary.com/dzixj0ktk/image/upload/v1605286529/yacht-pic_lc1fu1.jpg"
+          alt="First Picture of Yacht"/>
+      </div>
+      <div>
+        <img
+          className="slider-image-second"
+          src="https://res.cloudinary.com/dzixj0ktk/image/upload/v1605286527/yacht-pic-2_tgdw1v.jpg"
+          alt="Second Picture of Yacht"/>
+      </div>
+      <div>
+        <img
+          className="slider-image-second"
+        src="https://res.cloudinary.com/dzixj0ktk/image/upload/v1605286527/yacht-pic-3_osi9vb.jpg"
+        alt="Third Picture of Yacht"/>
+      </div>
+      <div>
+        <img
+          className="slider-image-second"
+          src="https://res.cloudinary.com/dzixj0ktk/image/upload/v1605286528/yacht-pic-9_anzbio.jpg"
+          alt="Nineth Picture of Yacht"/>
+      </div>
     </Slider>
   );
 }
