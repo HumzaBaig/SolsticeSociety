@@ -2,3 +2,31 @@
   background-color: #fff !important;
   width: 100%;
 }
+
+.error {
+  margin: 0;
+  margin-top: -15px;
+  /* padding-left: 26%; */
+  color: red;
+  text-align: left;
+}
+
+.input-box {
+  display: inline-block;
+  height: 40px;
+  font-size: 16px;
+  width: 100%;
+  padding: 0 10px;
+  background: #fff;
+  color: #666;
+  border: 1px solid #e5e5e5;
+  transition: .2s ease-in-out;
+  transition-property: color,background-color,border;
+}
+
+.input-container {
+  width: 90%;
+  height: 60px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
