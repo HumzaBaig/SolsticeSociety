@@ -14,4 +14,4 @@ class Reservation(models.Model):
     secondary_phone = models.CharField(max_length=10, default='')
     party_size = models.IntegerField(default=1)
     amount_paid = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
-    is_weekend = models.BooleanField()
+    is_weekend = models.BooleanField(default=False)
