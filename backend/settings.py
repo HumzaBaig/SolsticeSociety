@@ -48,6 +48,10 @@ EMAIL_USE_TLS = True
 STRIPE_API_KEY = os.getenv('STRIPE_API_KEY')
 stripe.api_key = STRIPE_API_KEY
 
+PRICE_WEEKDAY = 'price_1Hr1HHIVc7a48Sip1Mhz4JSd' if DEBUG == True else 'price_1Hr7B3IVc7a48SipRXstST4S'
+PRICE_WEEKEND = 'price_1Hr7B3IVc7a48Sip4shru7ht' if DEBUG == True else 'price_1Hr1KqIVc7a48SipSQWjIrs7'
+PRICE_HOURLY = 'price_1Hr1LEIVc7a48SipRmM3j4Sw' if DEBUG == True else 'price_1Hr7B3IVc7a48SipobTAarOX'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -58,6 +62,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'django_filters',
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
@@ -133,6 +138,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend'
+    ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
     ),

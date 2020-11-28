@@ -13,9 +13,9 @@ import { getReservations,setReservation } from '../../services/reservation';
 import { queryAllByAltText } from '@testing-library/react';
 
 // const stripePromise = loadStripe('pk_test_51HkymfIVc7a48SipnejreYlgXjWDgmVvWzmXEqMCvcgoLFYlK4nh3exRM1EybKy59gLkZpl0ZSPfNwMhGA9dh4cx004iOS5hhO');
-const stripePromise = loadStripe('pk_live_51HkymfIVc7a48Sipa98kFzvDeTwBGAgnN618VcC0tWB3Jyam0j8Ix4x4ILx3zDPxHsqDRRkiwh1y6tditWfnhlBH00yZ43EkUK');
+// const stripePromise = loadStripe('pk_live_51HkymfIVc7a48Sipa98kFzvDeTwBGAgnN618VcC0tWB3Jyam0j8Ix4x4ILx3zDPxHsqDRRkiwh1y6tditWfnhlBH00yZ43EkUK');
 const App = () => {
-  const isInitialMountForm = useRef(true); // reference to make sure form validation doesn't run on initial render
+  const isInitialMountForm = useRef(false); // reference to make sure form validation doesn't run on initial render
 
   const [loading, setLoading] = useState(true)
   const [allReservations, setAllReservations] = useState([]);
@@ -23,26 +23,57 @@ const App = () => {
   const [currentStart, setCurrentStart] = useState({});
   const [currentEnd, setCurrentEnd] = useState({});
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [number, setNumber] = useState('');
   const [total, setTotal] = useState();
 
-  const [nameError, setNameError] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [numberError, setNumberError] = useState('');
 
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
+  useEffect(async () => {
     const query = new URLSearchParams(window.location.search);
 
     if (query.get("success")) {
       setIsOpen(true);
     }
+    else if (query.get("canceled")) {
+      var token = '';
+      var url = '';
 
-    if (query.get("canceled")) {
-      setIsOpen(false);
+      if (process.env.NODE_ENV === 'development') {
+        token = 'f5fb9a93aca1d7fddbffcada2b29f5dcc65a8698';
+        url = 'http://127.0.0.1:8000/api/reservations/';
+      } else {
+        token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
+        url = 'https://solsticesociety.herokuapp.com/api/reservations/';
+      }
+
+      const searchUrl = url + '?search=' + query.get('canceled');
+
+      const djangoResponse = await fetch(searchUrl, {
+        method: 'GET',
+        withCredentials: true,
+        headers: new Headers({
+          'Authorization': 'Token ' + token,
+          'Content-Type': 'application/json'
+        }),
+      });
+
+      const reservation = await djangoResponse.json();
+
+      if (reservation && reservation[0]) {
+        url += reservation[0].id + '/'
+
+        const response = await fetch(url, {
+          method: 'DELETE',
+          withCredentials: true,
+          headers: new Headers({
+            'Authorization': 'Token ' + token,
+            'Content-Type': 'application/json'
+          }),
+        });
+      }
+
+      // To attempt to hide the session id
+      window.history.pushState('done', 'Solstice Society', '/');
     }
   }, [])
 
@@ -59,56 +90,23 @@ const App = () => {
       return () => mounted = false;
   }, []);
 
-  // useEffect(() => {
-  //   var total = 0.00;
-  //   var hours = 0;
-  //
-  //   var startDateTime = new Date(Date.parse(currentDate.startMonth + "/" + currentDate.startDay + "/" + currentDate.startYear + " " + currentStart.startTime));
-  //   var endDateTime = new Date(currentDate.endMonth + "/" + currentDate.endDay + "/" + currentDate.endYear + " " + currentEnd.endTime);
-  //
-  //   hours = Math.abs(startDateTime - endDateTime) / (1000 * 60 * 60);
-  //   if (hours >= 4 ) {
-  //     total = 1300.00 + ((hours - 4) * 200);
-  //     total = "$" + total;
-  //   } else {
-  //     total = "Minimum reservation is 4 hours";
-  //   }
-  //
-  //   setTotal(total);
-  // }, [currentDate, currentEnd, currentStart, total]);
-
-
-  const formValidation = () => {
-    var regex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
-
-    if (name === "") {
-      setNameError('Name cant be blank!');
-    }
-    if (email === "") {
-      setEmailError('Email cant be blank!');
-    }
-    if (number === "") {
-      setNumberError('Phone Number cant be blank!');
-    }
-    if (number.length !== 10) {
-      setNumberError('This is not a valid phone number!');
-    }
-    if (regex.test(email)) {
-      setEmailError('This is not a valid email address!');
-    }
-  }
-
   useEffect(() => {
-    if (isInitialMountForm) {
-      isInitialMountForm.current = false;
-      return;
+    var total = 0.00;
+    var hours = 0;
+  
+    var startDateTime = new Date(Date.parse(currentDate.startMonth + "/" + currentDate.startDay + "/" + currentDate.startYear + " " + currentStart.startTime));
+    var endDateTime = new Date(currentDate.endMonth + "/" + currentDate.endDay + "/" + currentDate.endYear + " " + currentEnd.endTime);
+  
+    hours = Math.abs(startDateTime - endDateTime) / (1000 * 60 * 60);
+    if (hours >= 4 ) {
+      total = 1300.00 + ((hours - 4) * 200);
+      total = "$" + total;
+    } else {
+      total = "Minimum reservation is 4 hours";
     }
-
-    formValidation();
-
-  }, [name, email, number]);
-
-  const safariRenderHack = { opacity: total % 2 ? 1 : 0.99 };
+  
+    setTotal(total);
+  }, [currentDate, currentEnd, currentStart, total]);
 
   //post reservation
   const showModal = () => {
@@ -141,44 +139,12 @@ const App = () => {
               <TimePickerDropdown setCurrentEnd={setCurrentEnd} startOrEnd='end' />
               <h2 className="cta-text left-text">User Info:</h2>
                 <div className="form-box">
-                  <input
-                    type="text"
-                    className="input-box"
-                    placeholder="John Doe"
-                    value={name}
-                    onChange={e => setName(e.target.value)}
+                  <CheckoutForm
+                    total={total}
+                    date={currentDate}
+                    start={currentStart}
+                    end={currentEnd}
                   />
-                  { nameError && <p>{nameError}</p> }
-                  <input
-                    type="email"
-                    className="input-box"
-                    placeholder="example@example.com"
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
-                  />
-                { emailError && <p>{emailError}</p> }
-                  <input
-                    type="text"
-                    className="input-box"
-                    placeholder="(555) 555-5555"
-                    value={number}
-                    onChange={e => setNumber(e.target.value)}
-                  />
-                { numberError && <p>{numberError}</p> }
-                  <div className="description" style={safariRenderHack}>
-                    <h3 className="total-tag">Total Price:</h3>
-                    <h5 className="total-price">{total}</h5>
-                  </div>
-                  <Elements stripe={stripePromise}>
-                    <CheckoutForm
-                      name={name}
-                      email={email}
-                      phone={number}
-                      date={currentDate}
-                      start={currentStart}
-                      end={currentEnd}
-                    />
-                  </Elements>
                 </div>
             </div>
           </>

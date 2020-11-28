@@ -1,12 +1,14 @@
 # views.py
 
+from rest_framework.filters import SearchFilter
 from stripe.api_resources.token import Token
-from backend.settings import BASE_URL
+from backend.settings import BASE_URL, PRICE_WEEKDAY, PRICE_WEEKEND, PRICE_HOURLY
 from django.core.mail import send_mail
 from django.views.decorators.csrf import csrf_exempt
+from django.conf import settings
 from rest_framework import views
 from rest_framework.authentication import TokenAuthentication
-from rest_framework import viewsets, permissions, status
+from rest_framework import viewsets, permissions, status, filters
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
@@ -27,6 +29,8 @@ class ReservationViewSet(viewsets.ModelViewSet):
     serializer_class = ReservationSerializer
     authentication_classes = [TokenAuthentication]
     permission_classes = [permissions.IsAuthenticated]
+    search_fields = ['session_id']
+    filter_backends = [filters.SearchFilter,]
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -71,7 +75,6 @@ class ReservationViewSet(viewsets.ModelViewSet):
         date = data['start'].strftime('%m/%d/%Y at %I:%M %p')
         duration = strfdelta((end - start))
         final_time = data['end'].strftime('%m/%d/%Y at %I:%M %p')
-        total_amount = get_total(data['amount_paid'])
         
 
         dev_email = ['humza.baig2009@gmail.com', 'ectomoplys@gmail.com']
@@ -130,7 +133,8 @@ Total: {format_currency(data['amount_paid'])}
 def checkout(request):
     email = request.data['email']
     dates = parse_request_dates(request)
-    cost = get_total_cost(dates[0], dates[1])
+    is_weekend = request.data['is_weekend']
+    cost = get_total_cost(dates[0], dates[1], is_weekend)
 
     try:
         checkout_session = stripe.checkout.Session.create(
@@ -139,7 +143,7 @@ def checkout(request):
             line_items=cost,
             mode='payment',
             success_url = BASE_URL + '?success=true',
-            cancel_url = BASE_URL + '?canceled=true',
+            cancel_url = BASE_URL + '?canceled={CHECKOUT_SESSION_ID}',
         )
 
         start = dates[0].strftime('%m-%d-%Y %H:%M')
@@ -180,25 +184,27 @@ def phone_format(n):
 def get_total(price):
     return Decimal(sub(r'[^\d.]', '', price))
 
-def get_total_cost(start, end):
+def get_total_cost(start, end, is_weekend):
     total_hours = int((end - start).total_seconds() / 3600)
-    print(total_hours)
+
+    base_price = PRICE_WEEKDAY
+
+    if (is_weekend):
+        base_price = PRICE_WEEKEND
+
     if (total_hours <= 4):
         return [{
-            'price' : 'price_1Hr7B3IVc7a48SipRXstST4S',
-            # 'price' : 'price_1Hr1HHIVc7a48Sip1Mhz4JSd',
+            'price' : base_price,
             'quantity' : 1,
         }]
     else:
         remaining_hours = total_hours - 4
         return [{
-            'price' : 'price_1Hr7B3IVc7a48SipRXstST4S',
-            # 'price' : 'price_1Hr1HHIVc7a48Sip1Mhz4JSd',
+            'price' : base_price,
             'quantity' : 1,
         },
         {
-            'price' : 'price_1Hr7B3IVc7a48SipobTAarOX',
-            # 'price' : 'price_1Hr1LEIVc7a48SipRmM3j4Sw',
+            'price' : PRICE_HOURLY,
             'quantity' : remaining_hours,
         }]
 
