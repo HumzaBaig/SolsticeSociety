@@ -6,25 +6,24 @@ import Video from '../VideoPlayer/VideoPlayer';
 import TimePickerDropdown from '../TimePickerDropdown/TimePickerDropdown';
 import InformationSection from '../Information/Information';
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
+import LengthPicker from '../LengthPicker/LengthPicker';
 
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from '@stripe/react-stripe-js';
-import { getReservations,setReservation } from '../../services/reservation';
+import { getReservations, setReservation } from '../../services/reservation';
 import { queryAllByAltText } from '@testing-library/react';
 
 // const stripePromise = loadStripe('pk_test_51HkymfIVc7a48SipnejreYlgXjWDgmVvWzmXEqMCvcgoLFYlK4nh3exRM1EybKy59gLkZpl0ZSPfNwMhGA9dh4cx004iOS5hhO');
 // const stripePromise = loadStripe('pk_live_51HkymfIVc7a48Sipa98kFzvDeTwBGAgnN618VcC0tWB3Jyam0j8Ix4x4ILx3zDPxHsqDRRkiwh1y6tditWfnhlBH00yZ43EkUK');
 const App = () => {
-  const isInitialMountForm = useRef(false); // reference to make sure form validation doesn't run on initial render
-
   const [loading, setLoading] = useState(true)
   const [allReservations, setAllReservations] = useState([]);
   const [currentDate, setCurrentDate] = useState({});
+  const [currentLength, setCurrentLength] = useState({ value: 4, lable: '4 Hours'});
   const [currentStart, setCurrentStart] = useState({});
   const [currentEnd, setCurrentEnd] = useState({});
 
   const [total, setTotal] = useState();
-
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -90,23 +89,18 @@ const App = () => {
       return () => mounted = false;
   }, []);
 
+
+  // temporary fix to update currentEnd state (need to clear out all instances of ending time from frontend)
   useEffect(() => {
-    var total = 0.00;
-    var hours = 0;
-  
-    var startDateTime = new Date(Date.parse(currentDate.startMonth + "/" + currentDate.startDay + "/" + currentDate.startYear + " " + currentStart.startTime));
-    var endDateTime = new Date(currentDate.endMonth + "/" + currentDate.endDay + "/" + currentDate.endYear + " " + currentEnd.endTime);
-  
-    hours = Math.abs(startDateTime - endDateTime) / (1000 * 60 * 60);
-    if (hours >= 4 ) {
-      total = 1300.00 + ((hours - 4) * 200);
-      total = "$" + total;
-    } else {
-      total = "Minimum reservation is 4 hours";
-    }
-  
-    setTotal(total);
-  }, [currentDate, currentEnd, currentStart, total]);
+    setCurrentEnd({
+      endTime: (parseInt(currentStart.startTime) + currentLength.value)
+    });
+  }, [currentLength, currentStart]);
+
+  useEffect(() => {
+    let total = 1300.00 + ((currentLength.value - 4) * 200);
+    setTotal("$" + total);
+  }, [currentDate, currentEnd, currentStart]);
 
   //post reservation
   const showModal = () => {
@@ -133,10 +127,12 @@ const App = () => {
             <div className="center-content">
               <h2 className="cta-text">Make a Reservation:</h2>
               <LiveCalendar allReservations={allReservations} setCurrentDate={setCurrentDate} />
-              <h2 className="cta-text left-text">Starting at:</h2>
-              <TimePickerDropdown setCurrentStart={setCurrentStart} startOrEnd='start' />
-              <h2 className="cta-text left-text">Ending at:</h2>
-              <TimePickerDropdown setCurrentEnd={setCurrentEnd} startOrEnd='end' />
+              <h2 className="cta-text left-text">I want to book...</h2>
+              <div className="timing-container">
+                <LengthPicker setCurrentLength={setCurrentLength} />
+                <h3 className="timing-text"> from </h3>
+                <TimePickerDropdown setCurrentStart={setCurrentStart} startOrEnd='start' />
+              </div>
               <h2 className="cta-text left-text">User Info:</h2>
                 <div className="form-box">
                   <CheckoutForm

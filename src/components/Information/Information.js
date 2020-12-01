@@ -20,7 +20,7 @@ const InformationSection = () => {
           <li>Full bar setup</li>
           <li>Towels, coolers, cups, plates, ice all provided</li>
           <li>Powerful humidifiers for indoor smoking</li>
-          <li>Large 8-person lounge island with canopy</li>
+          <li>Large 8-person lounge island with a canopy</li>
           <li>Large gangplank</li>
           <li>Floating beer pong</li>
           <li>Floating hammock chairs</li>

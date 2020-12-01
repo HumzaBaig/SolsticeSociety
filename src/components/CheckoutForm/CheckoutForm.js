@@ -65,7 +65,7 @@ const CheckoutForm = (props) => {
           token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
           url = 'https://solsticesociety.herokuapp.com/checkout/';
         }
-    
+
         const response = await fetch(url, {
           method: 'POST',
           withCredentials: true,
@@ -80,9 +80,9 @@ const CheckoutForm = (props) => {
             end: props.end,
           })
         });
-    
+
         const session = await response.json();
-    
+
         if (process.env.NODE_ENV === 'development') {
           url = 'http://127.0.0.1:8000/api/reservations/';
         } else {
@@ -109,7 +109,7 @@ const CheckoutForm = (props) => {
             amount_paid: String(session.amount_paid / 100),
           })
         });
-        
+
         if (djangoResponse.error) {
           console.log('conflict');
           alert('Schedule conflict');
@@ -140,7 +140,7 @@ const CheckoutForm = (props) => {
             });
 
             alert(result.error.message);
-          } 
+          }
         });
 
       } catch (e) {
@@ -161,7 +161,7 @@ const CheckoutForm = (props) => {
     else if (!regex.test(s)) {
       error = 'Not a valid email';
     }
-    
+
     setEmailError(error);
 
     return error === '';
@@ -188,7 +188,7 @@ const CheckoutForm = (props) => {
 
   const validatePhone = (value, callback) => {
     let error = ""
-    
+
     if (!value) error = "Required!"
     else if (value.length !== 14) error = "Invalid phone format. ex: (555) 555-5555";
 
@@ -196,25 +196,25 @@ const CheckoutForm = (props) => {
 
     return error === '';
   }
-  
+
   const normalizeInput = (value, previousValue) => {
     // return nothing if no value
-    if (!value) return value; 
-  
+    if (!value) return value;
+
     // only allows 0-9 inputs
     const currentValue = value.replace(/[^\d]/g, '');
-    const cvLength = currentValue.length; 
-  
+    const cvLength = currentValue.length;
+
     if (!previousValue || value.length > previousValue.length) {
-  
+
       // returns: "x", "xx", "xxx"
-      if (cvLength < 4) return currentValue; 
-  
+      if (cvLength < 4) return currentValue;
+
       // returns: "(xxx)", "(xxx) x", "(xxx) xx", "(xxx) xxx",
-      if (cvLength < 7) return `(${currentValue.slice(0, 3)}) ${currentValue.slice(3)}`; 
-  
+      if (cvLength < 7) return `(${currentValue.slice(0, 3)}) ${currentValue.slice(3)}`;
+
       // returns: "(xxx) xxx-", (xxx) xxx-x", "(xxx) xxx-xx", "(xxx) xxx-xxx", "(xxx) xxx-xxxx"
-      return `(${currentValue.slice(0, 3)}) ${currentValue.slice(3, 6)}-${currentValue.slice(6, 10)}`; 
+      return `(${currentValue.slice(0, 3)}) ${currentValue.slice(3, 6)}-${currentValue.slice(6, 10)}`;
     }
   };
 
@@ -237,14 +237,14 @@ const CheckoutForm = (props) => {
     if (n && sn && e && p && sp) {
       return true;
     }
-    
+
     alert('Please correct any mistakes with the input');
     return false;
   }
 
   return (
     <form onSubmit={handlePay}>
-      
+
       <div className='input-container'>
         <input
           type="text"
@@ -256,7 +256,7 @@ const CheckoutForm = (props) => {
         />
         { nameError && <p className='error'>{nameError}</p> }
       </div>
-      
+
       <div className='input-container'>
         <input
           type="email"
@@ -268,7 +268,7 @@ const CheckoutForm = (props) => {
         />
         { emailError && <p className='error'>{emailError}</p> }
       </div>
-      
+
       <div className='input-container'>
         <input
           type="text"
@@ -311,7 +311,7 @@ const CheckoutForm = (props) => {
         />
         { secondaryNameError && <p className='error'>{secondaryNameError}</p> }
       </div>
-      
+
       <div className='input-container'>
         <input
           type="text"

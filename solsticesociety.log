@@ -2249,3 +2249,125 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-11-28 01:18:34,203 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-11-28 01:18:52,788 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-11-28 01:18:56,726 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-28 18:06:29,419 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-28 18:06:51,712 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-28 18:06:51,763 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-28 18:53:18,994 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-28 22:02:46,731 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-28 22:02:46,984 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-28 23:54:13,553 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-28 23:54:29,947 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-28 23:55:16,782 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-28 23:55:20,822 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-28 23:56:15,756 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-28 23:56:38,798 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-29 00:25:04,072 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-29 21:31:22,914 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-29 21:31:23,218 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-29 21:36:56,479 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-29 21:37:19,705 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-29 21:37:19,760 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-29 21:39:03,983 [Thread-2    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-29 21:39:03,984 [Thread-2    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-29 21:39:04,106 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-29 21:39:04,148 [Thread-3    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-29 21:39:04,149 [Thread-3    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-29 21:39:04,223 [Thread-4    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-29 21:39:04,224 [Thread-4    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-29 21:39:04,314 [Thread-5    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-29 21:39:04,315 [Thread-5    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-29 21:39:05,220 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 00:32:09,973 [Thread-6    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-30 00:32:09,975 [Thread-6    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-30 00:32:38,857 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 00:33:41,242 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 00:34:02,334 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 00:34:05,500 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 00:34:16,140 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 00:36:45,254 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 00:36:50,324 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 00:37:02,291 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:18:45,787 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:19:44,685 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:19:45,648 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:39:20,957 [Thread-9    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-30 01:39:20,978 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:39:25,867 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:40:45,889 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:41:00,749 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:41:05,582 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:41:47,823 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:42:02,692 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:42:09,722 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:43:10,665 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:43:13,737 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:44:31,834 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:46:09,207 [Thread-10   ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-30 01:46:09,208 [Thread-10   ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-30 01:46:10,621 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:46:45,748 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:47:07,850 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:47:12,596 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:47:45,728 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:47:50,079 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:47:56,062 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:48:13,212 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:49:21,085 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:49:26,373 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:50:35,642 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:50:38,819 [Thread-11   ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-30 01:50:38,820 [Thread-11   ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-30 01:54:21,647 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:55:10,175 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:55:33,322 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:56:23,794 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:57:17,759 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:59:06,893 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:59:12,976 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 01:59:29,449 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:00:03,966 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:00:06,762 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:00:26,759 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:00:35,754 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:01:37,678 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:01:42,653 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:01:58,426 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:02:01,567 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:03:05,769 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:04:35,941 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:05:30,936 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:06:14,882 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:08:19,914 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:13:49,093 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:15:06,832 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:15:21,851 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:15:26,853 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:15:28,879 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:15:29,533 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:16:28,079 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:16:53,207 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 02:20:56,851 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 19:46:53,536 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-30 19:46:53,824 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-11-30 19:47:01,188 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-11-30 19:47:24,358 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 19:54:41,258 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 19:56:45,919 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 19:56:48,400 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 19:59:06,470 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 20:01:19,673 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 22:55:02,343 [Thread-3    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-11-30 22:55:02,370 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 23:30:32,575 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 23:37:50,312 [Thread-5    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 23:38:55,314 [Thread-6    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-30 23:38:55,316 [Thread-6    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-30 23:39:42,359 [Thread-5    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 23:45:13,618 [Thread-7    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-11-30 23:45:13,621 [Thread-7    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-11-30 23:45:15,787 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 23:45:20,575 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 23:46:51,274 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-11-30 23:53:52,980 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-01 02:07:36,642 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-01 02:07:36,873 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
