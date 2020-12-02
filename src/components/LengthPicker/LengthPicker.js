@@ -4,9 +4,9 @@ import Select from 'react-select';
 
 const LengthPicker = ({ setCurrentLength, currentLength }) => {
   const options = [
-                    { value: 4, label: "4 Hours" },
-                    { value: 6, label: "6 Hours" },
-                    { value: 8, label: "8 Hours" }
+                    { value: 4, label: "4" },
+                    { value: 6, label: "6" },
+                    { value: 8, label: "8" }
                   ];
 
   const [isDisabled, setDisabled] = useState(false);
@@ -14,16 +14,36 @@ const LengthPicker = ({ setCurrentLength, currentLength }) => {
   const customStyles = {
     control: (provided, state) => ({
       ...provided,
-      width: 110,
+      fontFamily: 'Homepage Baukasten-Book',
+      fontWeight: 400,
+      fontSize: 18,
+      color: '#000',
       borderTopWidth: 0,
       borderRightWidth: 0,
       borderLeftWidth: 0,
-      borderBottomWidth: 2,
+      borderBottomWidth: 1,
+      borderBottomColor: '#f9c947',
+      borderRadius: 0,
+      width: 55
     }),
-    indicatorSeperator: (provided, state) => ({
+    singleValue: (provided, state) => ({
       ...provided,
-      display: none
+      margin: 0
     }),
+    indicatorSeparator: (provided, state) => ({
+      ...provided,
+      width: 0
+    }),
+    dropdownIndicator: (provided, state) => ({
+        ...provided,
+        transform: state.selectProps.menuIsOpen && 'rotate(180deg)'
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.isFocused ? 'rgba(249, 201, 71, 0.3)' : '#fff',
+      backgroundColor: state.isSelected ? 'rgba(249, 201, 71, 0.7)' : '#fff',
+      color: (state.isFocused || state.isSelected) ? '#000' : null,
+    })
   }
 
   return (

@@ -5,15 +5,25 @@
   background-color: #000;
 }
 
-.center-content {
+.main-content {
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: 105%;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+
+  background-color: #000;
+  background-image: linear-gradient(315deg, #000000 0%, #0c0c0c 30%, #191919 45%, #000000 100%);
+  box-shadow: 0px -3px 9px rgba(0,0,0,0.3);
+}
+
+.center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: #F7F8FC; */
-  background-color: #000;
-  width: 100%;
-  overflow-x: hidden;
 }
 
 .timing-container {
@@ -24,6 +34,8 @@
   align-items: center;
 
   border-radius: 5px;
+
+  z-index: 1;
 }
 
 .timing-text {
@@ -31,18 +43,36 @@
   font-family: 'Homepage Baukasten-Book', sans-serif;
   margin-left: 15px;
   margin-right: 15px;
+
+  z-index: 1;
 }
 
 .cta-text {
-  margin-top: 12.5%;
   font-family: 'Homepage Baukasten-Bold', sans-serif;
-  color: #f9c947;
+  color: #fff;
+  width: 88%;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  margin-top: 10%;
+  margin-bottom: 4%;
+
+  z-index: 1;
 }
 
-.left-text {
-  align-self: flex-start;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+.top-text {
+  text-align: center;
+}
+
+.thin-text {
+  font-family: 'Homepage Baukasten-Book';
+  color: #f9c947;
+
+  letter-spacing: 2px;
+}
+
+.ellipse {
+  letter-spacing: 1px;
 }
 
 .form-box {
@@ -83,6 +113,8 @@
 .success-text {
   text-align: center;
   margin-top: 12px;
+
+  z-index: 1;
 }
 
 .submission-button {
@@ -130,8 +162,27 @@
 }
 
 .invalid {
-  border: 1px solid #ff0000
+  border: 1px solid #ff0000;
+
+  z-index: 1;
 }
+
+.info-container {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+
+  z-index: 1;
+  position: relative;
+}
+
+.info-text {
+  color: #f9c947;
+  font-family: 'Homepage Baukasten-Book';
+
+  width: 88%;
+}
+
 
 @media only screen and (min-width: 600px) {
   .App {

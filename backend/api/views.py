@@ -75,7 +75,7 @@ class ReservationViewSet(viewsets.ModelViewSet):
         date = data['start'].strftime('%m/%d/%Y at %I:%M %p')
         duration = strfdelta((end - start))
         final_time = data['end'].strftime('%m/%d/%Y at %I:%M %p')
-        
+
 
         dev_email = ['humza.baig2009@gmail.com', 'ectomoplys@gmail.com']
         production_email = [
@@ -96,6 +96,29 @@ Time: {date}
 Duration: {duration} ({final_time})
 Phone: {phone_format(data['phone'])}
 Total: {format_currency(data['amount_paid'])}
+
+Further Instructions:
+● We'll provide you with towels, ice, water and all other necessities.
+● You have two choices for pickup locations
+    1. Free parking at Lummus Park on the river in Downtown Miami.
+
+    OR
+
+    2. $90 pickup at the Epic Hotel and Marina in Downtown Miami
+       (valet not included).
+
+
+
+Solstice Society strictly follows the following guidelines on c​ancellations​:
+● If the cancellation is initiated at least seven days​ before t​he charter,
+  you will be eligible to receive a ​full r​efund of your deposit.
+● If the cancellation is initiated ​within ​seven days before your charter,
+  you will be eligible to receive ​half o​f your deposit back.
+● If for any reason, Solstice Society will be unavailable to fulfill our duties
+  and make the charter, your f​ull ​deposit will be refunded.
+● For inclement weather conditions that lead to your Solstice Society charter
+  getting cancelled, you will have the option to choose between getting your
+  f​ull ​deposit refunded or rescheduling your charter at a later date.
 
 Thank you!
             """,
@@ -148,7 +171,7 @@ def checkout(request):
 
         start = dates[0].strftime('%m-%d-%Y %H:%M')
         end = dates[1].strftime('%m-%d-%Y %H:%M')
-        
+
         return Response({
             'id' : checkout_session.id,
             'start' : start,

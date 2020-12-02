@@ -10,7 +10,7 @@ const Video = () => {
         muted
         autoplay
         playsinline
-        src="https://res.cloudinary.com/dzixj0ktk/video/upload/ac_none/v1605808078/IMG_2968_eozlvg.mp4"
+        src="https://res.cloudinary.com/dzixj0ktk/video/upload/ac_none,c_crop,g_center,h_352,q_100,w_300/v1605808078/IMG_2968_eozlvg.mp4"
         class="video"
       />
     ` }}>

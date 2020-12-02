@@ -1,11 +1,14 @@
 .slider-image-second {
-  width: 100%;
+  width: 88%;
+  margin:auto;
+
+  border-radius: 15px;
 }
 
 .slick-prev {
-    left: 2%;
-    z-index: 1;
+    left: .5%;
+    z-index: 2;
 }
 .slick-next {
-    right: 2%;
+    right: .5%;
 }
