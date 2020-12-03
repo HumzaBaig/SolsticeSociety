@@ -2827,3 +2827,8 @@ Traceback (most recent call last):
 AttributeError: 'int' object has no attribute 'split'
 2020-12-03 09:03:22,288 [Thread-1    ] [ERROR] [django.server       ]  "POST /checkout/ HTTP/1.1" 500 102014
 2020-12-03 09:15:16,104 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 09:27:13,977 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 09:27:59,875 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 19:41:57,021 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 20:21:52,802 [Thread-5    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-12-03 20:21:52,827 [Thread-5    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871

@@ -93,12 +93,13 @@ const App = () => {
 
   // temporary fix to update currentEnd state (need to clear out all instances of ending time from frontend)
   useEffect(() => {
-    // if (parseInt(currentStart.startTime) > ) {
-    //
-    // }
+    let time = parseInt(currentStart.startTime) + currentLength.value;
+    if (time > 12) {
+      time -= 12;
+    }
 
     setCurrentEnd({
-      endTime: "" + (parseInt(currentStart.startTime) + currentLength.value)
+      endTime: time + ":00";
     });
   }, [currentLength, currentStart]);
 
