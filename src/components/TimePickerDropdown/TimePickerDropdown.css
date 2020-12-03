@@ -1,16 +1,16 @@
 .timepicker {
-  /* box-shadow: 0 1em 4em rgba(0, 0, 0, 0.25); */
   border-style: none;
   font-family: 'Homepage Baukasten-Book', sans-serif;
   background-color: #fff;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   border-style: none !important;
-  padding: 5px;
   text-align: center;
-  font-size: 18px;
+  font-size: 26px;
+  line-height: 1.7;
 }
 
 .react-time-picker__wrapper {
   border-style: none !important;
+  border-bottom: 1px solid #f9c947 !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

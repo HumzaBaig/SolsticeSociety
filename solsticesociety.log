@@ -2604,3 +2604,226 @@ smtplib.SMTPServerDisconnected: Connection unexpectedly closed
 2020-12-02 08:45:38,018 [Thread-19   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
 2020-12-02 08:47:31,618 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-12-02 08:47:31,857 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-02 16:42:55,648 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-02 16:42:59,996 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-02 16:43:00,189 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-02 16:43:42,458 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 17:00:34,495 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 17:00:55,423 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 17:01:06,994 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 17:05:22,963 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 17:11:45,486 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 17:11:59,256 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 17:12:29,784 [Thread-3    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-12-02 17:12:29,808 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 22:13:17,407 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-02 22:13:17,654 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-02 22:27:40,107 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-02 22:28:03,813 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-12-02 22:28:03,877 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 22:28:42,498 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 22:30:05,976 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-02 22:56:48,596 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-02 22:56:48,848 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 00:51:09,893 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-03 00:51:24,772 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 06:22:58,317 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 06:40:30,659 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 06:41:55,530 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 07:10:23,847 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 07:10:24,022 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 08:14:13,080 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-03 08:14:31,811 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-12-03 08:14:31,869 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:18:07,091 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:24:26,659 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:31:25,740 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:31:34,844 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:31:55,731 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:32:06,598 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:32:11,476 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:33:11,634 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:33:15,698 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:34:34,784 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:34:38,731 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:35:08,675 [Thread-4    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-03 08:35:08,676 [Thread-4    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-03 08:35:09,872 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:35:26,014 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:35:42,693 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:35:52,711 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:36:01,241 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:44:09,855 [Thread-5    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-03 08:44:09,857 [Thread-5    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-03 08:44:11,042 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:44:17,008 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:44:27,681 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:44:29,099 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:44:30,680 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:44:53,800 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:45:11,758 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:45:52,926 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:47:51,884 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:49:39,589 [Thread-6    ] [INFO ] [django.server       ]  "OPTIONS /checkout/ HTTP/1.1" 200 0
+2020-12-03 08:49:39,679 [Thread-6    ] [ERROR] [django.request      ]  Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 158, in checkout
+    dates = parse_request_dates(request)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 236, in parse_request_dates
+    start_s = f"{r['date']['startMonth']}-{r['date']['startDay']}-{r['date']['startYear']} {int(r['start']['startTime'].split(':')[0])}:{int(r['start']['startTime'].split(':')[1])}"
+KeyError: 'startMonth'
+2020-12-03 08:49:39,682 [Thread-6    ] [ERROR] [django.server       ]  "POST /checkout/ HTTP/1.1" 500 101706
+2020-12-03 08:55:28,322 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py changed, reloading.
+2020-12-03 08:55:28,324 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 08:55:31,242 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-03 08:55:42,324 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 158, in checkout
+    dates = parse_request_dates(request)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 236, in parse_request_dates
+    start_s = f"{r['date']['month']}-{r['date']['startDay']}-{r['date']['startYear']} {int(r['start']['startTime'].split(':')[0])}:{int(r['start']['startTime'].split(':')[1])}"
+KeyError: 'startDay'
+2020-12-03 08:55:42,327 [Thread-1    ] [ERROR] [django.server       ]  "POST /checkout/ HTTP/1.1" 500 101684
+2020-12-03 08:56:11,243 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py changed, reloading.
+2020-12-03 08:56:11,244 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 08:56:13,427 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-03 08:56:16,226 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 158, in checkout
+    dates = parse_request_dates(request)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 237, in parse_request_dates
+    end_s = f"{r['date']['month']}-{r['date']['day']}-{r['date']['year']} {int(r['end']['endTime'].split(':')[0])}:{int(r['end']['endTime'].split(':')[1])}"
+AttributeError: 'int' object has no attribute 'split'
+2020-12-03 08:56:16,228 [Thread-1    ] [ERROR] [django.server       ]  "POST /checkout/ HTTP/1.1" 500 102014
+2020-12-03 08:57:27,994 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 08:57:49,713 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 09:00:46,885 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py changed, reloading.
+2020-12-03 09:00:46,887 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 09:00:49,180 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-03 09:01:07,290 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py changed, reloading.
+2020-12-03 09:01:07,290 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 09:01:08,152 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-03 09:01:15,001 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 158, in checkout
+    dates = parse_request_dates(request)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 237, in parse_request_dates
+    end_s = f"{r['date']['month']}-{r['date']['day']}-{r['date']['year']} {r['end']['endTime'].split(':')[0]}:{r['end']['endTime'].split(':')[1]}"
+AttributeError: 'int' object has no attribute 'split'
+2020-12-03 09:01:15,004 [Thread-1    ] [ERROR] [django.server       ]  "POST /checkout/ HTTP/1.1" 500 101985
+2020-12-03 09:01:38,747 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py changed, reloading.
+2020-12-03 09:01:38,748 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 09:01:41,256 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-03 09:01:42,024 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 09:01:42,203 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-03 09:01:47,488 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-03 09:02:54,834 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 09:03:22,286 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 158, in checkout
+    dates = parse_request_dates(request)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 237, in parse_request_dates
+    end_s = f"{r['date']['month']}-{r['date']['day']}-{r['date']['year']} {int(r['end']['endTime'].split(':')[0])}:{int(r['end']['endTime'].split(':')[1])}"
+AttributeError: 'int' object has no attribute 'split'
+2020-12-03 09:03:22,288 [Thread-1    ] [ERROR] [django.server       ]  "POST /checkout/ HTTP/1.1" 500 102014
+2020-12-03 09:15:16,104 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871

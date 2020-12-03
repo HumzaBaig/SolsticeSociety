@@ -15,8 +15,7 @@ const LengthPicker = ({ setCurrentLength, currentLength }) => {
     control: (provided, state) => ({
       ...provided,
       fontFamily: 'Homepage Baukasten-Book',
-      fontWeight: 400,
-      fontSize: 18,
+      fontSize: 26,
       color: '#000',
       borderTopWidth: 0,
       borderRightWidth: 0,
@@ -24,7 +23,8 @@ const LengthPicker = ({ setCurrentLength, currentLength }) => {
       borderBottomWidth: 1,
       borderBottomColor: '#f9c947',
       borderRadius: 0,
-      width: 55
+      width: 65,
+      height: 60
     }),
     singleValue: (provided, state) => ({
       ...provided,

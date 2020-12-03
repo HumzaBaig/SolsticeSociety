@@ -78,6 +78,7 @@ const CheckoutForm = (props) => {
             date: props.date,
             start: props.start,
             end: props.end,
+            is_weekend: props.isWeekend
           })
         });
 
@@ -107,6 +108,7 @@ const CheckoutForm = (props) => {
             phone: phone.replace(/\D/g, ''),
             secondary_phone: secondaryPhone.replace(/\D/g, ''),
             amount_paid: String(session.amount_paid / 100),
+            is_weekend: String(session.isWeekend),
           })
         });
 

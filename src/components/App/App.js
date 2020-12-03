@@ -22,6 +22,7 @@ const App = () => {
   const [currentLength, setCurrentLength] = useState({ value: 4, lable: '4'});
   const [currentStart, setCurrentStart] = useState({});
   const [currentEnd, setCurrentEnd] = useState({});
+  const [isWeekend, setIsWeekend] = useState(false);
 
   const [total, setTotal] = useState();
 
@@ -92,13 +93,27 @@ const App = () => {
 
   // temporary fix to update currentEnd state (need to clear out all instances of ending time from frontend)
   useEffect(() => {
+    // if (parseInt(currentStart.startTime) > ) {
+    //
+    // }
+
     setCurrentEnd({
-      endTime: (parseInt(currentStart.startTime) + currentLength.value)
+      endTime: "" + (parseInt(currentStart.startTime) + currentLength.value)
     });
   }, [currentLength, currentStart]);
 
   useEffect(() => {
-    let total = 1300.00 + ((currentLength.value - 4) * 200);
+    let total;
+    let dayNumber = new Date(currentDate.year, currentDate.month - 1, currentDate.day).getDay();
+
+    if (dayNumber == 0 || dayNumber > 4) {
+      setIsWeekend(true);
+      total = 1500.00;
+    } else {
+      total = 1300.00;
+    }
+
+    total += ((currentLength.value - 4) * 200);
     setTotal("$" + total);
   }, [currentDate, currentEnd, currentStart]);
 
@@ -141,6 +156,7 @@ const App = () => {
                     date={currentDate}
                     start={currentStart}
                     end={currentEnd}
+                    isWeekend={isWeekend}
                     />
                 </div>
               </div>
@@ -177,6 +193,9 @@ const App = () => {
                   </p>
                   <p className="info-text left-text">
                     * Tips are appreciated, but not mandatory *
+                  </p>
+                  <p className="info-text left-text">
+                    Call (504) 881-3388 if you have any questions
                   </p>
                 </div>
               </div>

@@ -233,8 +233,8 @@ def get_total_cost(start, end, is_weekend):
 
 def parse_request_dates(request):
     r = request.data
-    start_s = f"{r['date']['startMonth']}-{r['date']['startDay']}-{r['date']['startYear']} {int(r['start']['startTime'].split(':')[0])}:{int(r['start']['startTime'].split(':')[1])}"
-    end_s = f"{r['date']['endMonth']}-{r['date']['endDay']}-{r['date']['endYear']} {int(r['end']['endTime'].split(':')[0])}:{int(r['end']['endTime'].split(':')[1])}"
+    start_s = f"{r['date']['month']}-{r['date']['day']}-{r['date']['year']} {int(r['start']['startTime'].split(':')[0])}:{int(r['start']['startTime'].split(':')[1])}"
+    end_s = f"{r['date']['month']}-{r['date']['day']}-{r['date']['year']} {int(r['end']['endTime'].split(':')[0])}:{int(r['end']['endTime'].split(':')[1])}"
     format = '%m-%d-%Y %H:%M'
     start = datetime.strptime(start_s, format)
     end = datetime.strptime(end_s, format)
