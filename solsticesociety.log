@@ -2832,3 +2832,7 @@ AttributeError: 'int' object has no attribute 'split'
 2020-12-03 19:41:57,021 [Thread-4    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
 2020-12-03 20:21:52,802 [Thread-5    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
 2020-12-03 20:21:52,827 [Thread-5    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 22:02:19,004 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 22:02:29,872 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 22:03:21,825 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-03 22:03:27,850 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871

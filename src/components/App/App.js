@@ -42,7 +42,7 @@ const App = () => {
         token = 'f5fb9a93aca1d7fddbffcada2b29f5dcc65a8698';
         url = 'http://127.0.0.1:8000/api/reservations/';
       } else {
-        token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
+        token = '6996b998b6edf16bd40fc2acca897d365feec0d5';
         url = 'https://solsticesociety.herokuapp.com/api/reservations/';
       }
 
@@ -94,12 +94,12 @@ const App = () => {
   // temporary fix to update currentEnd state (need to clear out all instances of ending time from frontend)
   useEffect(() => {
     let time = parseInt(currentStart.startTime) + currentLength.value;
-    if (time > 12) {
-      time -= 12;
+    if (time > 24) {
+      time -= 24;
     }
 
     setCurrentEnd({
-      endTime: time + ":00";
+      endTime: time + ":00"
     });
   }, [currentLength, currentStart]);
 

@@ -62,7 +62,7 @@ const CheckoutForm = (props) => {
           token = 'f5fb9a93aca1d7fddbffcada2b29f5dcc65a8698';
           url = 'http://127.0.0.1:8000/checkout/';
         } else {
-          token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
+          token = '6996b998b6edf16bd40fc2acca897d365feec0d5';
           url = 'https://solsticesociety.herokuapp.com/checkout/';
         }
 

@@ -40,7 +40,7 @@ if (process.env.NODE_ENV === 'development') {
   token = '7622fb39205e7d329e8776c3fe02c7cd5a329454';
   url = 'http://127.0.0.1:8000/api/reservations/';
 } else {
-  token = '7ce271e6cdb7c863c9fff0486adb4ceb40adc766';
+  token = '6996b998b6edf16bd40fc2acca897d365feec0d5';
   url = 'https://solsticesociety.herokuapp.com/api/reservations/';
 }
 
@@ -72,7 +72,7 @@ yarn start
 Runs the app in development mode at [http://localhost:3000](http://localhost:3000) and will use the locally running Django server which is at `127.0.0.1:8000`. It's using my token I created for the development server.
 <br/><br/>
 
-Honestly that's all that's needed for the development side. 
+Honestly that's all that's needed for the development side.
 
 ### Email
 
