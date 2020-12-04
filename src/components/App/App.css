@@ -68,7 +68,7 @@
 
 .thin-text {
   font-family: 'Homepage Baukasten-Book';
-  color: #f9c947;
+  color: #f9c947 !important;
 
   letter-spacing: 2px;
 }
