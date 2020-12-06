@@ -16,6 +16,7 @@ const LengthPicker = ({ setCurrentLength, currentLength }) => {
       ...provided,
       fontFamily: 'Homepage Baukasten-Book',
       fontSize: 26,
+      fontWeight: 400,
       color: '#000',
       borderTopWidth: 0,
       borderRightWidth: 0,

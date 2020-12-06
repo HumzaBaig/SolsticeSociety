@@ -2838,3 +2838,182 @@ AttributeError: 'int' object has no attribute 'split'
 2020-12-03 22:03:27,850 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
 2020-12-04 04:31:09,117 [Thread-7    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
 2020-12-04 04:31:09,175 [Thread-7    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 04:53:29,871 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 04:53:55,973 [Thread-8    ] [INFO ] [django.server       ]  "OPTIONS /checkout/ HTTP/1.1" 200 0
+2020-12-04 04:53:56,001 [Thread-8    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 04:53:56,002 [Thread-8    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-04 04:53:56,035 [Thread-8    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 04:53:56,036 [Thread-8    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 04:54:27,615 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 04:54:27,841 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 04:54:35,844 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-04 04:54:39,908 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 04:54:39,908 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-04 04:54:39,939 [Thread-1    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 04:54:39,940 [Thread-1    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 04:55:31,689 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 04:55:31,691 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-04 04:55:31,719 [Thread-1    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 04:55:31,720 [Thread-1    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 04:55:36,574 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 04:55:54,585 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 04:55:54,587 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-04 04:55:54,622 [Thread-1    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 04:55:54,623 [Thread-1    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 05:07:37,158 [Thread-2    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 05:07:37,161 [Thread-2    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-04 05:07:37,194 [Thread-2    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 05:07:37,196 [Thread-2    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 05:15:03,537 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 05:15:30,887 [Thread-3    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 05:15:30,887 [Thread-3    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-04 05:15:30,950 [Thread-3    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 05:15:30,951 [Thread-3    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 05:15:46,707 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 05:15:46,878 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 05:16:09,551 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-04 05:16:42,499 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 05:20:36,949 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 05:20:36,952 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-04 05:20:37,018 [Thread-1    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 05:20:37,020 [Thread-1    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 05:35:42,485 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 05:35:42,736 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 05:36:24,131 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-04 05:36:52,219 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 05:37:54,843 [Thread-1    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-12-04 05:37:54,846 [Thread-1    ] [DEBUG] [stripe              ]  api_version=None message='Post details' post_data=customer_email=humza.baig2009%40gmail.com&payment_method_types[0]=card&line_items[0][price]=price_1Hr7B3IVc7a48Sip4shru7ht&line_items[0][quantity]=1&line_items[1][price]=price_1Hr1LEIVc7a48SipRmM3j4Sw&line_items[1][quantity]=4&mode=payment&success_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fsuccess%3Dtrue&cancel_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fcanceled%3D%7BCHECKOUT_SESSION_ID%7D
+2020-12-04 05:37:54,912 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  Starting new HTTPS connection (1): api.stripe.com:443
+2020-12-04 05:37:55,543 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/1.1" 400 353
+2020-12-04 05:37:55,545 [Thread-1    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2020-12-04 05:37:55,545 [Thread-1    ] [DEBUG] [stripe              ]  body='{\n  "error": {\n    "code": "resource_missing",\n    "doc_url": "https://stripe.com/docs/error-codes/resource-missing",\n    "message": "No such price: \'price_1Hr7B3IVc7a48Sip4shru7ht\'; a similar object exists in live mode, but a test mode key was used to make this request.",\n    "param": "line_items[0][price]",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+2020-12-04 05:37:55,546 [Thread-1    ] [DEBUG] [stripe              ]  link=https://dashboard.stripe.com/test/logs/req_JgFRVpNTtpiQzr message='Dashboard link for request'
+2020-12-04 05:37:55,546 [Thread-1    ] [INFO ] [stripe              ]  error_code=resource_missing error_message="No such price: 'price_1Hr7B3IVc7a48Sip4shru7ht'; a similar object exists in live mode, but a test mode key was used to make this request." error_param=line_items[0][price] error_type=invalid_request_error message='Stripe API error received'
+2020-12-04 05:37:55,548 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 05:37:55,549 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 167
+2020-12-04 05:37:55,588 [Thread-1    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 05:37:55,590 [Thread-1    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 05:50:14,352 [Thread-2    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-12-04 05:50:14,366 [Thread-2    ] [DEBUG] [stripe              ]  api_version=None message='Post details' post_data=customer_email=humza.baig2009%40gmail.com&payment_method_types[0]=card&line_items[0][price]=price_1Hr7B3IVc7a48Sip4shru7ht&line_items[0][quantity]=1&line_items[1][price]=price_1Hr1LEIVc7a48SipRmM3j4Sw&line_items[1][quantity]=4&mode=payment&success_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fsuccess%3Dtrue&cancel_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fcanceled%3D%7BCHECKOUT_SESSION_ID%7D
+2020-12-04 05:50:14,495 [Thread-2    ] [DEBUG] [urllib3.connectionpo]  Starting new HTTPS connection (1): api.stripe.com:443
+2020-12-04 05:50:14,943 [Thread-2    ] [DEBUG] [urllib3.connectionpo]  https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/1.1" 400 353
+2020-12-04 05:50:14,944 [Thread-2    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2020-12-04 05:50:14,944 [Thread-2    ] [DEBUG] [stripe              ]  body='{\n  "error": {\n    "code": "resource_missing",\n    "doc_url": "https://stripe.com/docs/error-codes/resource-missing",\n    "message": "No such price: \'price_1Hr7B3IVc7a48Sip4shru7ht\'; a similar object exists in live mode, but a test mode key was used to make this request.",\n    "param": "line_items[0][price]",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+2020-12-04 05:50:14,945 [Thread-2    ] [DEBUG] [stripe              ]  link=https://dashboard.stripe.com/test/logs/req_FH9x4YWRdhTkm9 message='Dashboard link for request'
+2020-12-04 05:50:14,946 [Thread-2    ] [INFO ] [stripe              ]  error_code=resource_missing error_message="No such price: 'price_1Hr7B3IVc7a48Sip4shru7ht'; a similar object exists in live mode, but a test mode key was used to make this request." error_param=line_items[0][price] error_type=invalid_request_error message='Stripe API error received'
+2020-12-04 05:50:14,948 [Thread-2    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 05:50:14,948 [Thread-2    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 167
+2020-12-04 05:50:15,038 [Thread-2    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 05:50:15,040 [Thread-2    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 05:50:28,224 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 05:50:53,450 [Thread-2    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-12-04 05:50:53,452 [Thread-2    ] [DEBUG] [stripe              ]  api_version=None message='Post details' post_data=customer_email=humza.baig2009%40gmail.com&payment_method_types[0]=card&line_items[0][price]=price_1Hr7B3IVc7a48Sip4shru7ht&line_items[0][quantity]=1&line_items[1][price]=price_1Hr1LEIVc7a48SipRmM3j4Sw&line_items[1][quantity]=4&mode=payment&success_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fsuccess%3Dtrue&cancel_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fcanceled%3D%7BCHECKOUT_SESSION_ID%7D
+2020-12-04 05:50:53,677 [Thread-2    ] [DEBUG] [urllib3.connectionpo]  https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/1.1" 400 353
+2020-12-04 05:50:53,677 [Thread-2    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2020-12-04 05:50:53,678 [Thread-2    ] [DEBUG] [stripe              ]  body='{\n  "error": {\n    "code": "resource_missing",\n    "doc_url": "https://stripe.com/docs/error-codes/resource-missing",\n    "message": "No such price: \'price_1Hr7B3IVc7a48Sip4shru7ht\'; a similar object exists in live mode, but a test mode key was used to make this request.",\n    "param": "line_items[0][price]",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+2020-12-04 05:50:53,678 [Thread-2    ] [DEBUG] [stripe              ]  link=https://dashboard.stripe.com/test/logs/req_TZpqqVrGpfWSG4 message='Dashboard link for request'
+2020-12-04 05:50:53,678 [Thread-2    ] [INFO ] [stripe              ]  error_code=resource_missing error_message="No such price: 'price_1Hr7B3IVc7a48Sip4shru7ht'; a similar object exists in live mode, but a test mode key was used to make this request." error_param=line_items[0][price] error_type=invalid_request_error message='Stripe API error received'
+2020-12-04 05:50:53,679 [Thread-2    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-04 05:50:53,679 [Thread-2    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 167
+2020-12-04 05:50:53,718 [Thread-2    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 05:50:53,719 [Thread-2    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-04 05:57:44,121 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/settings.py changed, reloading.
+2020-12-04 05:57:44,126 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 05:57:47,093 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-04 05:57:47,560 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 05:57:47,793 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 05:57:56,484 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-04 05:59:49,169 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 06:05:03,588 [Thread-1    ] [INFO ] [stripe              ]  message='Request to Stripe api' method=post path=https://api.stripe.com/v1/checkout/sessions
+2020-12-04 06:05:03,595 [Thread-1    ] [DEBUG] [stripe              ]  api_version=None message='Post details' post_data=customer_email=humza.baig2009%40gmail.com&payment_method_types[0]=card&line_items[0][price]=price_1Hr1KqIVc7a48SipSQWjIrs7&line_items[0][quantity]=1&line_items[1][price]=price_1Hr1LEIVc7a48SipRmM3j4Sw&line_items[1][quantity]=4&mode=payment&success_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fsuccess%3Dtrue&cancel_url=http%3A%2F%2Flocalhost%3A3000%2F%3Fcanceled%3D%7BCHECKOUT_SESSION_ID%7D
+2020-12-04 06:05:03,658 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  Starting new HTTPS connection (1): api.stripe.com:443
+2020-12-04 06:05:04,369 [Thread-1    ] [DEBUG] [urllib3.connectionpo]  https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/1.1" 200 896
+2020-12-04 06:05:04,373 [Thread-1    ] [INFO ] [stripe              ]  message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2020-12-04 06:05:04,373 [Thread-1    ] [DEBUG] [stripe              ]  body='{\n  "id": "cs_test_b1Eu39T6nKAZoQk1NutUL19ReDsu35pNb2vooum2wdW4BaH1FLWzcQFYq3",\n  "object": "checkout.session",\n  "allow_promotion_codes": null,\n  "amount_subtotal": 230000,\n  "amount_total": 230000,\n  "billing_address_collection": null,\n  "cancel_url": "http://localhost:3000/?canceled={CHECKOUT_SESSION_ID}",\n  "client_reference_id": null,\n  "currency": "usd",\n  "customer": null,\n  "customer_email": "humza.baig2009@gmail.com",\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n  },\n  "mode": "payment",\n  "payment_intent": "pi_1HuXPgIVc7a48SipQidmQDUo",\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "setup_intent": null,\n  "shipping": null,\n  "shipping_address_collection": null,\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "http://localhost:3000/?success=true",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_tax": 0\n  }\n}\n' message='API response body'
+2020-12-04 06:05:04,375 [Thread-1    ] [DEBUG] [stripe              ]  link=https://dashboard.stripe.com/test/logs/req_QOitPOpZsxmPQA message='Dashboard link for request'
+2020-12-04 06:05:04,388 [Thread-1    ] [INFO ] [django.server       ]  "POST /checkout/ HTTP/1.1" 200 148
+2020-12-04 06:05:04,536 [Thread-1    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-04 06:05:04,609 [Thread-1    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 43
+2020-12-04 06:06:01,606 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 06:08:51,310 [Thread-2    ] [WARNI] [django.request      ]  Not Found: /reservations
+2020-12-04 06:08:51,393 [Thread-2    ] [WARNI] [django.server       ]  "GET /reservations HTTP/1.1" 404 2320
+2020-12-04 06:08:53,549 [Thread-2    ] [WARNI] [django.request      ]  Not Found: /favicon.ico
+2020-12-04 06:08:53,552 [Thread-2    ] [WARNI] [django.server       ]  "GET /favicon.ico HTTP/1.1" 404 2317
+2020-12-04 06:09:00,469 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations HTTP/1.1" 301 0
+2020-12-04 06:09:00,648 [Thread-2    ] [WARNI] [django.request      ]  Unauthorized: /api/reservations/
+2020-12-04 06:09:00,649 [Thread-2    ] [WARNI] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 401 5235
+2020-12-04 06:09:00,750 [Thread-3    ] [INFO ] [django.server       ]  "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+2020-12-04 06:09:00,751 [Thread-4    ] [INFO ] [django.server       ]  "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+2020-12-04 06:09:00,764 [Thread-5    ] [INFO ] [django.server       ]  "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+2020-12-04 06:09:00,794 [Thread-7    ] [INFO ] [django.server       ]  "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+2020-12-04 06:09:00,801 [Thread-6    ] [INFO ] [django.server       ]  "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+2020-12-04 06:09:00,876 [Thread-6    ] [INFO ] [django.server       ]  "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+2020-12-04 06:09:00,877 [Thread-4    ] [INFO ] [django.server       ]  "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+2020-12-04 06:09:00,882 [Thread-7    ] [INFO ] [django.server       ]  "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+2020-12-04 06:09:00,884 [Thread-5    ] [INFO ] [django.server       ]  "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+2020-12-04 06:09:00,913 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+2020-12-04 06:09:00,965 [Thread-2    ] [INFO ] [django.server       ]  "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+2020-12-04 19:53:48,660 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:11:42,975 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:13:00,598 [Thread-9    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-12-04 20:13:00,617 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:13:12,526 [Thread-9    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:20:55,034 [Thread-10   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:21:04,327 [Thread-10   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:27:35,617 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:27:40,205 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:28:17,846 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:29:42,572 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:30:55,972 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:31:14,452 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:31:23,154 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:31:38,631 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:35:17,426 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:36:33,030 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:37:45,124 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:37:55,914 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:38:02,284 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:39:27,784 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:39:47,501 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:40:15,096 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:41:16,257 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:43:19,348 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:43:43,596 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 20:46:45,237 [Thread-11   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:00:05,575 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:00:29,159 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:00:42,368 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:00:46,384 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:00:50,824 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:01:52,103 [Thread-13   ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-04 21:01:52,103 [Thread-13   ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-04 21:01:53,129 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:02:00,744 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:02:13,979 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:02:33,009 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:02:51,007 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:03:12,443 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:03:25,039 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:03:32,905 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:03:48,307 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:03:57,306 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:04:00,983 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:04:26,992 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:04:35,046 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:04:36,968 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:04:41,282 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:04:42,192 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:04:55,278 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:05:00,108 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:05:01,934 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:05:05,969 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:05:12,183 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:05:31,354 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:05:38,607 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:05:52,426 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 21:05:57,136 [Thread-12   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 23:05:15,753 [Thread-14   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 23:13:21,563 [Thread-15   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 23:13:35,064 [Thread-15   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-04 23:16:12,537 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-04 23:16:12,787 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector

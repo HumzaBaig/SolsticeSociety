@@ -13,8 +13,16 @@ import { Elements } from '@stripe/react-stripe-js';
 import { getReservations, setReservation } from '../../services/reservation';
 import { queryAllByAltText } from '@testing-library/react';
 
-// const stripePromise = loadStripe('pk_test_51HkymfIVc7a48SipnejreYlgXjWDgmVvWzmXEqMCvcgoLFYlK4nh3exRM1EybKy59gLkZpl0ZSPfNwMhGA9dh4cx004iOS5hhO');
-// const stripePromise = loadStripe('pk_live_51HkymfIVc7a48Sipa98kFzvDeTwBGAgnN618VcC0tWB3Jyam0j8Ix4x4ILx3zDPxHsqDRRkiwh1y6tditWfnhlBH00yZ43EkUK');
+import { CgMusicSpeaker } from 'react-icons/cg';
+import { HiOutlineLightBulb } from 'react-icons/hi';
+import { BiDrink } from 'react-icons/bi';
+import { FaUtensils, FaChair } from 'react-icons/fa';
+import { GiCigarette, GiPlanks, GiUnicorn, GiGlassBall } from 'react-icons/gi';
+import { GrLounge } from 'react-icons/gr';
+import { TiBeer } from 'react-icons/ti';
+import { RiTeamLine } from 'react-icons/ri';
+import { IoAirplaneOutline } from 'react-icons/io5';
+
 const App = () => {
   const [loading, setLoading] = useState(true)
   const [allReservations, setAllReservations] = useState([]);
@@ -147,7 +155,7 @@ const App = () => {
                 <h2 className="cta-text">I WANT TO<br /><span className="thin-text">RESERV<span className="ellipse">E...</span></span></h2>
                 <div className="timing-container">
                   <LengthPicker setCurrentLength={setCurrentLength} />
-                  <h3 className="timing-text">hours from </h3>
+                  <h3 className="timing-text">hours at</h3>
                   <TimePickerDropdown setCurrentStart={setCurrentStart} startOrEnd='start' />
                 </div>
                 <h2 className="cta-text">YOUR <span className="thin-text">INFO:</span></h2>
@@ -162,43 +170,100 @@ const App = () => {
                 </div>
               </div>
               <div className="center">
-                <h2 className="cta-text left-text info-title">BOAT <span className="thin-text">SPECS:</span></h2>
+                <h2 className="cta-text left-text">THE <span className="thin-text">GALLERY:</span></h2>
               </div>
               <ImageSliderSecond />
               <div className="center">
-                <div className="info-container center">
-                  <p className="info-text left-text">
-                    47ft x 14ft (50 with the swim platform) flybridge - year 2002, 660 hsp, Carver 410 sport sedan.
+                <h2 className="cta-text left-text info-title">JUST A BIT<br /><span className="thin-text">ABOUT US:</span></h2>
+                <div className="info-container">
+                  <div className="specs-container">
+                    <h3 className="left-text info-subtitle">SPECIFICATIONS:</h3>
+                    <p className="info-text info-small">LENGTH</p>
+                    <p className="info-text">50'/</p>
+
+                    <p className="info-text info-small">YEAR</p>
+                    <p className="info-text">2002</p>
+
+                    <p className="info-text info-small">POWER</p>
+                    <p className="info-text">660 HSP</p>
+
+                    <p className="info-text info-small">MODEL</p>
+                    <p className="info-text">Carver 410 Sport Sedan</p>
+                  </div>
+
+                  <hr className="info-divider" />
+
+                <div className="features-container">
+                  <h3 className="left-text info-subtitle">FEATURES:</h3>
+                  <div className="feature-box">
+                    <CgMusicSpeaker />
+                    <p className="feature">Loud PA system setup with large subwoofer</p>
+                  </div>
+                  <div className="feature-box">
+                    <HiOutlineLightBulb />
+                    <p className="feature">LED light setup</p>
+                  </div>
+                  <div className="feature-box">
+                    <BiDrink />
+                    <p className="feature">Full bar setup</p>
+                  </div>
+                  <div className="feature-box">
+                    <FaUtensils />
+                    <p className="feature">Towels, coolers, cups, plates, ice all provided</p>
+                  </div>
+                  <div className="feature-box">
+                    <GiCigarette />
+                    <p className="feature">Powerful humidifiers for indoor smoking</p>
+                  </div>
+                  <div className="feature-box">
+                    <GrLounge />
+                    <p className="feature">Large 8-person lounge island with a canopy</p>
+                  </div>
+                  <div className="feature-box">
+                    <GiPlanks />
+                    <p className="feature">Large gangplank</p>
+                  </div>
+                  <div className="feature-box">
+                    <TiBeer />
+                    <p className="feature">Floating beer pong</p>
+                  </div>
+                  <div className="feature-box">
+                    <FaChair />
+                    <p className="feature">Floating hammock chairs</p>
+                  </div>
+                  <div className="feature-box">
+                    <GiUnicorn />
+                    <p className="feature">Floating unicorn</p>
+                  </div>
+                  <div className="feature-box">
+                    <GiGlassBall />
+                    <p className="feature">2 large stand-inside, walk-on-water floating balls</p>
+                  </div>
+                </div>
+
+                <hr className="info-divider" />
+
+              <div className="team-container">
+                <h3 className="left-text info-subtitle">THE CREW:</h3>
+                <div className="team-member-box">
+                  <RiTeamLine />
+                  <p className="team-member">3 Crew Members</p>
+                </div>
+                <div className="team-member-box">
+                  <IoAirplaneOutline />
+                  <p className="team-member">1 Airplane Steward</p>
+                </div>
+              </div>
+
+
+                  <p className="tip-text">
+                    * Tips are appreciated, but not mandatory
                   </p>
-                  <p className="info-text left-text">
-                    50ft carver in beautiful condition with all of the features needed plus:
-                  </p>
-                  <ul className="info-text">
-                    <li>Loud PA system setup with large subwoofer</li>
-                    <li>LED light setup</li>
-                    <li>Full bar setup</li>
-                    <li>Towels, coolers, cups, plates, ice all provided</li>
-                    <li>Powerful humidifiers for indoor smoking</li>
-                    <li>Large 8-person lounge island with a canopy</li>
-                    <li>Large gangplank</li>
-                    <li>Floating beer pong</li>
-                    <li>Floating hammock chairs</li>
-                    <li>Floating unicorn</li>
-                    <li>2 large stand-inside, walk-on-water floating balls</li>
-                  </ul>
-                  <p className="info-text left-text">
-                    All features EXCLUSIVE to this carver only!
-                  </p>
-                  <p className="info-text left-text">
-                    Boat comes with full service (3 crew members, 1 airplane steward) to accommodate you so you won’ t have to worry about anything but having a great time aboard!
-                  </p>
-                  <p className="info-text left-text">
-                    * Tips are appreciated, but not mandatory *
-                  </p>
-                  <p className="info-text left-text">
-                    Call (504) 881-3388 if you have any questions
+                  <p className="contact-text">
+                    Call <a href="tel:504-881-3388">(504) 881-3388</a> if you have any questions or concerns.
                   </p>
                 </div>
+                <br />
               </div>
             </div>
           </>

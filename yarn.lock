@@ -7140,6 +7140,18 @@ loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lottie-web-react@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/lottie-web-react/-/lottie-web-react-1.0.3.tgz#85b95d450aef97d99b4b5eef7f13e196d33bc8f2"
+  integrity sha512-A9USGaRvGe6FEXTj179ZHd2y71zpz0cJWt3C8RoGSN3Q8VrHND6UwDStP2dMtu3RfG4M9+eLSzgwC5D0hq2zlw==
+  dependencies:
+    lottie-web "5.6.3"
+
+lottie-web@5.6.3:
+  version "5.6.3"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.6.3.tgz#d3dd9f8d8c50c02f286e1b2da946dc04489410ec"
+  integrity sha512-cSG6kSA2m5ppxV/QMVHRVGop/R+oXgO4vVMvDcZR015Cy0PGml5hHP+XG21yB2qV6cYZy+X3ChTogSALgch7CA==
+
 lower-case@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-2.0.1.tgz#39eeb36e396115cc05e29422eaea9e692c9408c7"
@@ -9229,6 +9241,11 @@ react-fit@^1.0.3:
   dependencies:
     detect-element-overflow "^1.2.0"
     prop-types "^15.6.0"
+
+react-icons@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.1.0.tgz#9ca9bcbf2e3aee8e86e378bb9d465842947bbfc3"
+  integrity sha512-FCXBg1JbbR0vWALXIxmFAfozHdVIJmmwCD81Jk0EKOt7Ax4AdBNcaRkWhR0NaKy9ugJgoY3fFvo0PHpte55pXg==
 
 react-input-autosize@^2.2.2:
   version "2.2.2"
