@@ -6,6 +6,7 @@ const Video = () => {
   return (
     <div className="video-container" dangerouslySetInnerHTML={{ __html: `
       <video
+        poster="https://res.cloudinary.com/dzixj0ktk/image/upload/q_100/v1607298595/SSBookings_Video_Poster_b3e0dw.svg"
         loop
         muted
         autoplay
