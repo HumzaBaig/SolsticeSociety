@@ -3065,3 +3065,11 @@ AttributeError: 'int' object has no attribute 'split'
 2020-12-06 13:36:34,967 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
 2020-12-06 13:36:38,858 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
 2020-12-06 13:37:09,188 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:40:13,245 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-06 13:40:13,478 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-06 22:03:24,954 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-06 22:04:34,554 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 22:08:22,500 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 22:08:36,706 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 22:08:51,889 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 22:09:15,598 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
