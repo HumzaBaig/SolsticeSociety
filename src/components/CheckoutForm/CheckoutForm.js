@@ -284,7 +284,7 @@ const CheckoutForm = (props) => {
         { phoneError && <p className='error'>{phoneError}</p> }
       </div>
 
-      <div className='input-container'>
+      <div className='input-container select-container'>
         <select
           className='input-box'
           // value={partySize}

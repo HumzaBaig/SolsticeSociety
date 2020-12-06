@@ -17,7 +17,8 @@ input[type="text"],
 input[type="email"],
 input[type="button"],
 input[type="submit"],
-.input-checkbox {
+.input-checkbox,
+select {
   -webkit-appearance: none;
 }
 
@@ -32,6 +33,10 @@ input[type="submit"],
   border: 1px solid #e5e5e5;
   transition: .2s ease-in-out;
   transition-property: color,background-color,border;
+}
+
+select.input-box {
+  width: 108.5%;
 }
 
 .input-container {
