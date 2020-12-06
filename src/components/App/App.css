@@ -14,7 +14,6 @@
   z-index: 1;
 
   background-color: #000;
-  background-image: linear-gradient(315deg, #000000 0%, #0c0c0c 30%, #191919 45%, #000000 100%);
   box-shadow: 0px -3px 9px rgba(0,0,0,0.3);
 }
 
@@ -68,7 +67,7 @@
 
 .thin-text {
   font-family: 'Homepage Baukasten-Book';
-  color: #f9c947;
+  color: #f9c947 !important;
 
   letter-spacing: 2px;
 }
