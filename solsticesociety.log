@@ -3017,3 +3017,51 @@ AttributeError: 'int' object has no attribute 'split'
 2020-12-04 23:13:35,064 [Thread-15   ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
 2020-12-04 23:16:12,537 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-12-04 23:16:12,787 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-06 13:01:43,179 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-06 13:02:06,062 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /checkout/ HTTP/1.1" 200 0
+2020-12-06 13:02:06,144 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-06 13:02:06,145 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-06 13:02:06,187 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-12-06 13:02:06,243 [Thread-1    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-06 13:02:06,245 [Thread-1    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-06 13:03:52,822 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-06 13:03:52,995 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-06 13:05:38,332 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-06 13:05:45,642 [Thread-1    ] [WARNI] [django.request      ]  Forbidden: /checkout/
+2020-12-06 13:05:45,644 [Thread-1    ] [WARNI] [django.server       ]  "POST /checkout/ HTTP/1.1" 403 238
+2020-12-06 13:05:45,705 [Thread-1    ] [WARNI] [django.request      ]  Bad Request: /api/reservations/
+2020-12-06 13:05:45,706 [Thread-1    ] [WARNI] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 400 159
+2020-12-06 13:06:36,794 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:07:14,988 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:07:18,266 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:07:50,125 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:09:14,271 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:17:18,370 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:19:01,566 [Thread-3    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-06 13:19:01,570 [Thread-3    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-06 13:19:19,825 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:19:59,488 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:20:23,160 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:20:28,389 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:20:33,212 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:21:20,136 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:22:44,252 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:25:41,765 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:26:17,414 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:26:39,083 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:27:20,315 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:27:27,160 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:27:41,715 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:28:01,011 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:30:49,456 [Thread-4    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-06 13:30:49,459 [Thread-4    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-06 13:31:14,640 [Thread-5    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-06 13:31:14,641 [Thread-5    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-06 13:31:42,229 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:33:16,139 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:34:06,916 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:35:35,973 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:36:33,235 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:36:34,967 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:36:38,858 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871
+2020-12-06 13:37:09,188 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 3871

@@ -7,6 +7,7 @@ import TimePickerDropdown from '../TimePickerDropdown/TimePickerDropdown';
 import ImageSliderSecond from '../ImageSlider/ImageSliderSecond';
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
 import LengthPicker from '../LengthPicker/LengthPicker';
+import Animation from '../Animation/Animation';
 
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from '@stripe/react-stripe-js';
@@ -269,13 +270,15 @@ const App = () => {
           </>
         ) : (
           <>
-            <Video />
-            <br />
-            <br />
-            <br />
-            <div className="form-box">
-              <h2 className="cta-text success-text">Your Spot Has Been Booked!</h2>
+            <div className="result-container">
+              <Animation path="https://assets1.lottiefiles.com/datafiles/K6S8jDtSdQ7EPjH/data.json" />
+              <h2 className="success-text">Thank You For Your Reservation</h2>
+              <h3 className="email-reminder">You'll be recieving a confirmation email from us shortly, with all of your reservation details. Make sure to check your spam folder as well.</h3>
+              <p className="success-contact contact-text">
+                Call <a href="tel:504-881-3388">(504) 881-3388</a> if you have any questions or concerns.
+              </p>
             </div>
+
           </>
         )}
       </div>

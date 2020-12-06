@@ -112,11 +112,30 @@
   margin-bottom: 15px;
 }
 
-.success-text {
-  text-align: center;
-  margin-top: 12px;
+.result-container {
+  padding: 10%;
 
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-text {
+  font-family: 'Homepage Baukasten-Bold';
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.email-reminder {
+  font-family: 'Homepage Baukasten-Book';
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .submission-button {
@@ -260,6 +279,11 @@
   text-decoration: none;
   color: #f9c947;
   text-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+}
+
+.success-contact {
+  color: #fff;
+  margin-top: 40%;
 }
 
 @media only screen and (min-width: 600px) {
