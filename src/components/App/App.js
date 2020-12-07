@@ -264,6 +264,7 @@ const App = () => {
                     Call <a href="tel:504-881-3388">(504) 881-3388</a> if you have any questions or concerns.
                   </p>
                 </div>
+                <a className="revitii" href="https://www.revitii.com">Made by Revitii</a>
                 <br />
               </div>
             </div>
@@ -278,7 +279,6 @@ const App = () => {
                 Call <a href="tel:504-881-3388">(504) 881-3388</a> if you have any questions or concerns.
               </p>
             </div>
-
           </>
         )}
       </div>

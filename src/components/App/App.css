@@ -285,6 +285,12 @@
   margin-top: 40%;
 }
 
+.revitii {
+  text-decoration: none;
+  color: #000;
+  font-size: 8px;
+}
+
 @media only screen and (min-width: 600px) {
   .App {
     justify-content: flex-start;
