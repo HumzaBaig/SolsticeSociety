@@ -6,10 +6,9 @@ const Video = () => {
   return (
     <div className="video-container" dangerouslySetInnerHTML={{ __html: `
       <video
-        poster="https://res.cloudinary.com/dzixj0ktk/image/upload/q_100/v1607298595/SSBookings_Video_Poster_b3e0dw.svg"
+        poster="https://res.cloudinary.com/dzixj0ktk/image/upload/q_100/v1607301181/SSBookings_Video_Poster_e9jyri.svg"
         loop
         muted
-        autoplay
         playsinline
         src="https://res.cloudinary.com/dzixj0ktk/video/upload/v1605808078/IMG_2968_eozlvg.mp4"
         class="video"
