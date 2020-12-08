@@ -14,6 +14,39 @@ const LiveCalendar = ({ allReservations, setCurrentDate }) => {
     day: 30
   }
 
+  const disabledDays = [
+    {
+      year: 2020,
+      month: 12,
+      day: 25,
+    },
+    {
+      year: 2019,
+      month: 12,
+      day: 26,
+    },
+    {
+      year: 2019,
+      month: 12,
+      day: 27,
+    },
+    {
+      year: 2021,
+      month: 1,
+      day: 1,
+    },
+    {
+      year: 2021,
+      month: 1,
+      day: 2,
+    },
+    {
+      year: 2021,
+      month: 1,
+      day: 3,
+    }
+  ];
+
   //disable all days after earliest reservation that is after the users start day
   useEffect(() => {
     if (isInitialMount.current) {
@@ -59,6 +92,7 @@ const LiveCalendar = ({ allReservations, setCurrentDate }) => {
         inputPlaceholder="Select a day"
         minimumDate={utils().getToday()}
         maximumDate={maximumDate}
+        disabledDays={disabledDays}
         colorPrimary="#f9c947"
         colorPrimaryLight="rgba(249,201,71, 0.25)"
         calendarClassName="custom-calendar"
