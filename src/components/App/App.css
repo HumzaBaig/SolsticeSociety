@@ -73,7 +73,11 @@
 }
 
 .top-text .thin-text {
-  color: #e0b43f;
+  /* color: #e0b43f; */
+  /* ^ 1 shade darker */
+  
+  color: #C7A038
+  /* ^ 2 shades darker */
 }
 
 .ellipse {
