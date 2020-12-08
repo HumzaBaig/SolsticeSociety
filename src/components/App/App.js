@@ -244,17 +244,17 @@ const App = () => {
 
                 <hr className="info-divider" />
 
-              <div className="team-container">
-                <h3 className="left-text info-subtitle">THE CREW:</h3>
-                <div className="team-member-box">
-                  <RiTeamLine />
-                  <p className="team-member">3 Crew Members</p>
+                <div className="team-container">
+                  <h3 className="left-text info-subtitle">THE CREW:</h3>
+                  <div className="team-member-box">
+                    <RiTeamLine />
+                    <p className="team-member">3 Crew Members</p>
+                  </div>
+                  <div className="team-member-box">
+                    <IoAirplaneOutline />
+                    <p className="team-member">1 Airplane Steward</p>
+                  </div>
                 </div>
-                <div className="team-member-box">
-                  <IoAirplaneOutline />
-                  <p className="team-member">1 Airplane Steward</p>
-                </div>
-              </div>
 
 
                   <p className="tip-text">
