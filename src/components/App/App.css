@@ -67,10 +67,13 @@
 
 .thin-text {
   font-family: 'Homepage Baukasten-Book';
-  /* color: #f9c947; */
-  color: #215B8F;
+  color: #f9c947;
 
   letter-spacing: 2px;
+}
+
+.top-text .thin-text {
+  color: #c7a038;
 }
 
 .ellipse {
