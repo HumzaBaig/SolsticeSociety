@@ -21,12 +21,12 @@ const LiveCalendar = ({ allReservations, setCurrentDate }) => {
       day: 25,
     },
     {
-      year: 2019,
+      year: 2020,
       month: 12,
       day: 26,
     },
     {
-      year: 2019,
+      year: 2020,
       month: 12,
       day: 27,
     },
