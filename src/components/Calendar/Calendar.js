@@ -97,6 +97,13 @@ const LiveCalendar = ({ allReservations, setCurrentDate }) => {
         colorPrimaryLight="rgba(249,201,71, 0.25)"
         calendarClassName="custom-calendar"
         shouldHighlightWeekends
+        renderFooter={() => (
+          <div style={{ padding: '0 2rem .5rem 2rem' }}>
+            <p style={{ lineHeight: 1.5, fontSize: '11px' }}>
+              *Special pricing for Christmas and New Years weekends. Contact us at <a href="tel:504-881-3388">(504) 881-3388</a> for more info.
+            </p>
+          </div>
+        )}
       />
     </div>
   );

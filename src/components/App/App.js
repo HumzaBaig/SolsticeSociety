@@ -17,11 +17,11 @@ import { queryAllByAltText } from '@testing-library/react';
 import { CgMusicSpeaker } from 'react-icons/cg';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { BiDrink } from 'react-icons/bi';
-import { FaUtensils, FaChair } from 'react-icons/fa';
-import { GiCigarette, GiPlanks, GiUnicorn, GiGlassBall } from 'react-icons/gi';
+import { FaChair, FaInstagram } from 'react-icons/fa';
+import { GiCigarette, GiUnicorn, GiGlassBall, GiCaptainHatProfile, GiIceCubes } from 'react-icons/gi';
 import { GrLounge } from 'react-icons/gr';
 import { TiBeer } from 'react-icons/ti';
-import { RiTeamLine } from 'react-icons/ri';
+import { BsPersonFill } from 'react-icons/bs';
 import { IoAirplaneOutline } from 'react-icons/io5';
 
 const App = () => {
@@ -209,8 +209,8 @@ const App = () => {
                     <p className="feature">Full bar setup</p>
                   </div>
                   <div className="feature-box">
-                    <FaUtensils />
-                    <p className="feature">Towels, coolers, cups, plates, ice all provided</p>
+                    <GiIceCubes />
+                    <p className="feature">Towels, ice, water, and cups are provided. <span className="small-feature">(We recommend you bring your own).</span></p>
                   </div>
                   <div className="feature-box">
                     <GiCigarette />
@@ -218,11 +218,7 @@ const App = () => {
                   </div>
                   <div className="feature-box">
                     <GrLounge />
-                    <p className="feature">Large 8-person lounge island with a canopy</p>
-                  </div>
-                  <div className="feature-box">
-                    <GiPlanks />
-                    <p className="feature">Large gangplank</p>
+                    <p className="feature">Large giant floating pad</p>
                   </div>
                   <div className="feature-box">
                     <TiBeer />
@@ -247,8 +243,12 @@ const App = () => {
                 <div className="team-container">
                   <h3 className="left-text info-subtitle">THE CREW:</h3>
                   <div className="team-member-box">
-                    <RiTeamLine />
-                    <p className="team-member">3 Crew Members</p>
+                    <GiCaptainHatProfile />
+                    <p className="team-member">1 Captain</p>
+                  </div>
+                  <div className="team-member-box">
+                    <BsPersonFill />
+                    <p className="team-member">1 Deckhand</p>
                   </div>
                   <div className="team-member-box">
                     <IoAirplaneOutline />
@@ -263,6 +263,11 @@ const App = () => {
                   <p className="contact-text">
                     Call <a href="tel:504-881-3388">(504) 881-3388</a> if you have any questions or concerns.
                   </p>
+                  <center>
+                    <a className="social-link" href="instagram://user?username=solsticesociety.mia">
+                      <FaInstagram className="social-icon" />
+                    </a>
+                  </center>
                 </div>
                 <a className="revitii" href="https://www.revitii.com">Made by Revitii</a>
                 <br />
