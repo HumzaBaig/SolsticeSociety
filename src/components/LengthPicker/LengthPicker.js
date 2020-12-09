@@ -43,7 +43,7 @@ const LengthPicker = ({ setCurrentLength, currentLength }) => {
       ...provided,
       backgroundColor: state.isFocused ? 'rgba(249, 201, 71, 0.3)' : '#fff',
       backgroundColor: state.isSelected ? 'rgba(249, 201, 71, 0.7)' : '#fff',
-      color: (state.isFocused || state.isSelected) ? '#000' : null,
+      color: (state.isFocused || state.isSelected) ? '#000' : null
     })
   }
 
@@ -60,6 +60,7 @@ const LengthPicker = ({ setCurrentLength, currentLength }) => {
           options={options}
           onChange={setCurrentLength}
           styles={customStyles}
+          menuPortalTarget={document.body}
         />
   );
 }
