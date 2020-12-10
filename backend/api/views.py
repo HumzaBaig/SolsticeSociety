@@ -161,6 +161,7 @@ def checkout(request):
 
     try:
         checkout_session = stripe.checkout.Session.create(
+            billing_address_collection='required',
             customer_email=email,
             payment_method_types=['card'],
             line_items=cost,
