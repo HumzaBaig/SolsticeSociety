@@ -180,7 +180,7 @@ const App = () => {
                   <div className="specs-container">
                     <h3 className="left-text info-subtitle">SPECIFICATIONS:</h3>
                     <p className="info-text info-small">LENGTH</p>
-                    <p className="info-text">50'/</p>
+                    <p className="info-text">50' / 15.24m</p>
 
                     <p className="info-text info-small">YEAR</p>
                     <p className="info-text">2002</p>
