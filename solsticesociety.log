@@ -3219,3 +3219,5 @@ AttributeError: 'int' object has no attribute 'split'
 2020-12-11 06:01:25,341 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
 2020-12-11 06:01:29,502 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
 2020-12-11 06:01:40,524 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:38:20,948 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-11 06:38:21,174 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
