@@ -331,6 +331,7 @@ const CheckoutForm = (props) => {
         <h3 className="total-tag">Total Price:</h3>
         <h5 className="total-price">{props.total}</h5>
       </div>
+      <h5 className="deposit-tag">Due now: <span className="deposit-price">${props.deposit}</span></h5>
 
       <center className="background-form">
         <button className="submission-button" type="submit">

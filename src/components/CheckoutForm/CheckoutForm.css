@@ -45,3 +45,19 @@ select.input-box {
   margin-bottom: 8px;
   display: inline-block;
 }
+
+.deposit-tag {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: -0.154px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-family: 'Homepage Baukasten-Book';
+}
+
+.deposit-price {
+  font-family: 'Homepage Baukasten-Bold';
+  font-size: 18px;
+  font-weight: 500;
+}

@@ -34,6 +34,7 @@ const App = () => {
   const [isWeekend, setIsWeekend] = useState(false);
 
   const [total, setTotal] = useState();
+  const [deposit, setDeposit] = useState(0);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -118,14 +119,22 @@ const App = () => {
 
     if (dayNumber == 0 || dayNumber > 4) {
       setIsWeekend(true);
-      total = 1500.00;
+      total = 1360.00;
     } else {
-      total = 1300.00;
+      total = 1160.00;
     }
 
     total += ((currentLength.value - 4) * 200);
     setTotal("$" + total);
   }, [currentDate, currentEnd, currentStart]);
+
+  useEffect(() => {
+    if (currentLength.value == 8) {
+      setDeposit(1000);
+    } else {
+      setDeposit(500);
+    }
+  }, [currentLength]);
 
   //post reservation
   const showModal = () => {
@@ -163,6 +172,7 @@ const App = () => {
                 <div className="form-box">
                   <CheckoutForm
                     total={total}
+                    deposit={deposit}
                     date={currentDate}
                     start={currentStart}
                     end={currentEnd}

@@ -3195,3 +3195,27 @@ AttributeError: 'int' object has no attribute 'split'
 2020-12-11 04:23:02,880 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
 2020-12-11 04:28:37,226 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
 2020-12-11 04:29:37,208 [Thread-2    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:15:25,262 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:19:43,348 [Thread-3    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:31:15,032 [Thread-4    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-11 05:31:15,033 [Thread-4    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-11 05:31:15,190 [Thread-5    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-11 05:31:15,191 [Thread-5    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-11 05:31:17,977 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:31:22,174 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:31:31,392 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:32:04,577 [Thread-7    ] [WARNI] [django.request      ]  Not Found: /babel/parser/lib/index.js
+2020-12-11 05:32:04,578 [Thread-7    ] [WARNI] [django.server       ]  "GET /babel/parser/lib/index.js HTTP/1.1" 404 2359
+2020-12-11 05:32:16,818 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:33:19,909 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:35:01,233 [Thread-6    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:58:12,609 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 05:59:56,123 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:00:24,418 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:00:30,918 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:00:53,322 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:00:57,216 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:01:19,537 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:01:25,341 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:01:29,502 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-11 06:01:40,524 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
