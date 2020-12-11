@@ -288,7 +288,7 @@ const App = () => {
             <div className="result-container">
               <Animation path="https://assets1.lottiefiles.com/datafiles/K6S8jDtSdQ7EPjH/data.json" />
               <h2 className="success-text">Thank You For Your Reservation</h2>
-              <h3 className="email-reminder">You'll be recieving a confirmation email from us shortly, with all of your reservation details. Make sure to check your spam folder as well.</h3>
+              <h3 className="email-reminder">You'll be recieving a confirmation email from us shortly, with all of your reservation details. Make sure to check your spam folder as well. Be ready to pay the rest of the payment right before you board.</h3>
               <p className="success-contact contact-text">
                 Call <a href="tel:504-881-3388">(504) 881-3388</a> if you have any questions or concerns.
               </p>
