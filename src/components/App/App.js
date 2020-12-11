@@ -270,7 +270,6 @@ const App = () => {
                   </center>
                 </div>
                 <a className="revitii" href="https://www.revitii.com">Made by Revitii</a>
-                <br />
               </div>
             </div>
           </>

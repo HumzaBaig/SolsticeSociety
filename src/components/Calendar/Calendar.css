@@ -1,4 +1,5 @@
 .custom-calendar {
-  border-radius: 5px;
+  border-radius: 5px !important;
   font-family: 'Homepage Baukasten-Book';
+  width: 100% !important;
 }
