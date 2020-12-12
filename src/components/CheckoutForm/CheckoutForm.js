@@ -107,7 +107,7 @@ const CheckoutForm = (props) => {
             end: session.end,
             phone: phone.replace(/\D/g, ''),
             secondary_phone: secondaryPhone.replace(/\D/g, ''),
-            amount_paid: String(session.amount_paid / 100),
+            amount_paid: String(props.total),
             is_weekend: session.isWeekend,
           })
         });
