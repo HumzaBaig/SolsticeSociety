@@ -157,7 +157,11 @@ def checkout(request):
     email = request.data['email']
     dates = parse_request_dates(request)
     is_weekend = request.data['is_weekend']
-    cost = get_total_cost(dates[0], dates[1], is_weekend)
+    # cost = get_total_cost(dates[0], dates[1], is_weekend)
+    cost = [{
+        'price' : PRICE_DEPOSIT,
+        'quantity' : 1,
+    }]
 
     try:
         checkout_session = stripe.checkout.Session.create(

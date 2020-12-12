@@ -48,9 +48,11 @@ EMAIL_USE_TLS = True
 STRIPE_API_KEY = os.getenv('STRIPE_API_KEY')
 stripe.api_key = STRIPE_API_KEY
 
-PRICE_WEEKDAY = 'price_1Hr1HHIVc7a48Sip1Mhz4JSd' if DEBUG == True else 'price_1Hr7B3IVc7a48SipRXstST4S'
-PRICE_WEEKEND = 'price_1Hr1KqIVc7a48SipSQWjIrs7' if DEBUG == True else 'price_1Hr7B3IVc7a48Sip4shru7ht'
+PRICE_WEEKDAY = 'price_1HxN3aIVc7a48SipiWhWBnRM' if DEBUG == True else 'price_1HxN55IVc7a48Sip3lnxrkBM'
+PRICE_WEEKEND = 'price_1HxN3JIVc7a48SippmZni0Tl' if DEBUG == True else 'price_1HxN4uIVc7a48SipBZOQMoUf'
 PRICE_HOURLY = 'price_1Hr1LEIVc7a48SipRmM3j4Sw' if DEBUG == True else 'price_1Hr7B3IVc7a48SipobTAarOX'
+
+PRICE_DEPOSIT = 'price_1Hx5EkIVc7a48SipsC3Pd876' if DEBUG == True else 'price_1HxKbzIVc7a48Sipd1mLxMXR'
 
 # Application definition
 
