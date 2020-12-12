@@ -2,7 +2,7 @@
 
 from rest_framework.filters import SearchFilter
 from stripe.api_resources.token import Token
-from backend.settings import BASE_URL, PRICE_WEEKDAY, PRICE_WEEKEND, PRICE_HOURLY
+from backend.settings import BASE_URL, PRICE_WEEKDAY, PRICE_WEEKEND, PRICE_HOURLY, PRICE_DEPOSIT
 from django.core.mail import send_mail
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings

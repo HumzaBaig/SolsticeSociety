@@ -129,11 +129,13 @@ const App = () => {
   }, [currentDate, currentEnd, currentStart]);
 
   useEffect(() => {
-    if (currentLength.value == 8) {
-      setDeposit(1000);
-    } else {
-      setDeposit(500);
-    }
+    // if (currentLength.value == 8) {
+    //   setDeposit(1000);
+    // } else {
+    //   setDeposit(500);
+    // }
+
+    setDeposit(500);
   }, [currentLength]);
 
   //post reservation

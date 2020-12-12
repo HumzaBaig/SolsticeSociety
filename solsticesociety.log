@@ -3221,3 +3221,42 @@ AttributeError: 'int' object has no attribute 'split'
 2020-12-11 06:01:40,524 [Thread-8    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
 2020-12-11 06:38:20,948 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-12-11 06:38:21,174 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-12 02:03:31,036 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-12 02:03:51,701 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-12-12 02:03:51,759 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-12 02:04:04,135 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-12 02:04:14,040 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-12 02:05:01,984 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4242
+2020-12-12 02:05:13,726 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /checkout/ HTTP/1.1" 200 0
+2020-12-12 02:05:13,856 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/humzabaig/.local/share/virtualenvs/solsticesociety-KCW0RIT3/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py", line 162, in checkout
+    'price' : PRICE_DEPOSIT,
+NameError: name 'PRICE_DEPOSIT' is not defined
+2020-12-12 02:05:13,859 [Thread-1    ] [ERROR] [django.server       ]  "POST /checkout/ HTTP/1.1" 500 97683
+2020-12-12 02:06:16,428 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/settings.py changed, reloading.
+2020-12-12 02:06:16,430 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-12 02:06:18,925 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-12 02:11:45,034 [MainThread  ] [INFO ] [django.utils.autorel]  /Users/humzabaig/Documents/Revitii/Clients/Solstice Society/solsticesociety/backend/api/views.py changed, reloading.
+2020-12-12 02:11:45,036 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-12 02:11:47,506 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
