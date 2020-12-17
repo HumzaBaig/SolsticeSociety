@@ -264,7 +264,7 @@ const App = () => {
                   </div>
                   <div className="team-member-box">
                     <IoAirplaneOutline />
-                    <p className="team-member">1 Airplane Steward</p>
+                    <p className="team-member">1 Steward</p>
                   </div>
                 </div>
 

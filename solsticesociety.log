@@ -3289,3 +3289,9 @@ NameError: name 'PRICE_DEPOSIT' is not defined
 2020-12-12 02:15:36,119 [Thread-1    ] [INFO ] [django.server       ]  "POST /api/reservations/ HTTP/1.1" 201 388
 2020-12-12 02:23:43,345 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
 2020-12-12 02:23:43,529 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-17 07:24:41,366 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2020-12-17 07:25:20,959 [Thread-1    ] [INFO ] [django.server       ]  "OPTIONS /api/reservations/ HTTP/1.1" 200 0
+2020-12-17 07:25:21,009 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4631
+2020-12-17 07:25:28,197 [Thread-1    ] [INFO ] [django.server       ]  "GET /api/reservations/ HTTP/1.1" 200 4631
+2020-12-17 07:25:40,067 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
+2020-12-17 07:25:40,246 [MainThread  ] [DEBUG] [asyncio             ]  Using selector: KqueueSelector
